@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7A43C907-B786-BD15-8B88-8BCEA729A5D6" name="Reserva">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 20:48:56 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ReservaId" id="99CD082B-5116-66CC-05CB-B85C2AE63ABD">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:01:42 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nro_habitacion" id="4C984C73-8FED-D199-CC97-2630369E2FD9">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 20:49:32 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Check-in" id="5C6CBCBC-0534-8F9C-BCD4-B5F559D4C318">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 20:50:17 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Check_out" id="F41E2EA3-5269-3B72-CFA9-9D2ADD295912">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 20:50:49 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpresaClienteId" id="CFB666AF-3951-C9AC-85F4-3E1B5641BCFC">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:36:46 UTC</createdTime>
+<generatorID>4719B0AD-B7FB-3853-B779-F32B96CD40FF</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<referedAttribute>B2E350CE-EF91-FA6B-54B5-40A86B97B761</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AD3E029D-FDFF-A2F0-2702-331753EEE8DF" name="Reserva PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 20:49:30 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>99CD082B-5116-66CC-05CB-B85C2AE63ABD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

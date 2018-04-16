@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62329C2A-26FC-6D3D-DFBF-E7F8C7A8CCB1" name="Hostal">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>44EC135A-BBFF-6AE9-CF08-7ADCA649396E</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HostalId" id="02C9BCAC-750C-3838-E0ED-AB0EC478DCA5">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>9EC7D0FD-6F17-FD6E-8E54-E7FA65236C34</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HostalNombre" id="185A0DB0-AB4A-50EE-B723-B3C5415D380F">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>1E295526-9D02-1102-437D-E1D74D25B2DD</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="319B90FA-DEF2-A2E4-C075-8FC343314BDE">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>84053A8F-12B6-7D96-54CA-39C2AD9E2EE6</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmpresaId" id="908F4A65-BE9F-575E-91CE-506D933E5354">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:25:50 UTC</createdTime>
+<generatorID>99BFFCB0-7B68-DBBB-EAE3-22C40B2E477C</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CA7D7F3-6BB3-E1F8-A4A2-845A101BE55C" name="Hostal_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>64E3923A-0967-9BAB-F83F-E4BB1A948036</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02C9BCAC-750C-3838-E0ED-AB0EC478DCA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

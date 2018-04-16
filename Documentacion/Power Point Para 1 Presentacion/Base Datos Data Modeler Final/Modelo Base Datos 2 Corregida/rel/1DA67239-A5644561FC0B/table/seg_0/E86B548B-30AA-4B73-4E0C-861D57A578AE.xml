@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E86B548B-30AA-4B73-4E0C-861D57A578AE" name="MovimientoInventario">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>CA3EF551-212C-5BC0-6D74-2F8ABF8F8100</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MovimientoInventarioId" id="52A6DFFA-B1A2-D1C2-4247-67F7F73B2773">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>613EE449-034D-3ED6-49E8-8FEE219E1425</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Producto" id="F2060C56-3D39-F67F-7FAD-0493C14EEEC4">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>E981D38F-4987-7647-4563-20B16258CF16</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad" id="C7DF1575-49D1-B513-4272-813E9170FD90">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>FD606B3D-E42D-2068-56C1-70299B531465</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="InventarioId" id="DD18E278-789D-5B61-2EF9-0DB319C5EA05">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:19:06 UTC</createdTime>
+<generatorID>A93916FD-3A1B-5527-132F-4A8CFB7552BC</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Observacion" id="0ECFE749-2C3B-AD67-1C90-4AC3CC342727">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:47:59 UTC</createdTime>
+<generatorID>95109BBC-8DDE-C597-E922-EBD8665BDCFB</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Inventario_InventarioId" id="46DFBEE1-761C-6F40-9F29-1A608A0C6222">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-15 21:36:35 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="095D54F2-1E24-13C9-7978-136FA038CEBD" referredColumn="08D5C2D9-C0D8-467E-DA29-1110DB848792"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE3D72BC-CE60-52CA-9B8D-23DF5D2223F8" name="MovimientoInventario_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>B6BC6281-5B53-300E-0739-E06371132F0F</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52A6DFFA-B1A2-D1C2-4247-67F7F73B2773"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7092643D-4D5E-61FB-D651-5049A2FDCF41" name="MovimientoInventario_Inventario_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-15 21:36:35 UTC</createdTime>
+<generatorID>AE373EEB-C563-5293-96E3-D904F9410B34</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46DFBEE1-761C-6F40-9F29-1A608A0C6222"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

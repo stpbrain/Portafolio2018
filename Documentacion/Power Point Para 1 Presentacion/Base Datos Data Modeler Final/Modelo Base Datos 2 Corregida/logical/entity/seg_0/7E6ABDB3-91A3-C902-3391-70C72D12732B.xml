@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E6ABDB3-91A3-C902-3391-70C72D12732B" name="EmpleadoHosteria">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:20:31 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EmpleadoHosteriaId" id="F545E5BB-E3A9-A971-BADC-F86EA5BCA35B">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:20:55 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RutEmpleado" id="B49C8865-F83F-8DF5-6A41-D24C3B299670">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:21:26 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NombreEmpleado" id="C30D35EC-747B-F54C-3A07-F349DF73FBB9">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:21:39 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ApellidoEmpleado" id="78292456-4139-EA0A-26BC-41342DC7E521">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:25:28 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TelefonoEmpleado" id="12296147-4A82-D318-B7B8-D7DF8DC2D561">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:21:59 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HostalId" id="EB228F3B-9F66-8FA6-7D93-39FFC2AF4339">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:08:05 UTC</createdTime>
+<generatorID>64A997E6-9126-7E2C-EE51-853D68648566</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<referedAttribute>9EC7D0FD-6F17-FD6E-8E54-E7FA65236C34</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD786A7C-9248-438A-217B-0685503FC000" name="Empleado_hosteria PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:21:05 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F545E5BB-E3A9-A971-BADC-F86EA5BCA35B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

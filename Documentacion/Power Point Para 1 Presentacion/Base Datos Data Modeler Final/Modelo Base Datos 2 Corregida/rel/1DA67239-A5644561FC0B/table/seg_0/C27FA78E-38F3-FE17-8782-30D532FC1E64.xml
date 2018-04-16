@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C27FA78E-38F3-FE17-8782-30D532FC1E64" name="ServicioComedor">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>6A01CD59-3A4D-0E1E-ACEC-063B70E57CC5</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ServicioComedorId" id="B47540A5-1953-C3F7-BEDF-38A49FB2712C">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>F2ED42A8-2271-02C1-011C-102F300A5C1B</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ejecutivo" id="72CD4F95-AAE2-4AE6-1DB6-94A00189A0E3">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>0D1AEF91-7A2B-CEBE-684D-30516E144720</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Especial" id="A3C26D07-05D5-C03D-7F21-2EAC1CB442AB">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>5015BA5C-A03C-0919-BE79-743688CB29C8</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="General" id="739EFA83-B806-C608-68C7-BB0762356F51">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>6D883C96-976D-96C5-3B0E-B51A7B031D68</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Buffet" id="9D686EAD-4868-4711-09D9-32ACEEA978DF">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>673918D1-5FD4-7812-3088-E99F4E6C9802</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmpleadoHosteria_EmpleadoHosteriaId" id="DC18782F-8BBA-1209-0C0D-98461B642E1F">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>9434C673-6825-C901-697C-BEC12D4C247D</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="902BFFEB-A264-1B5F-0FFC-67B4ECF18195" referredColumn="C1399B5A-55CD-38F4-5DC7-3864B84B6B6C"/>
+</associations>
+</Column>
+<Column name="Descripcion" id="AF185518-5124-582B-83E6-A90228EB04F9">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:39:45 UTC</createdTime>
+<generatorID>87EE309E-FC90-65E6-4E8F-6873F9C462F5</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23FE1A44-ECD8-76F5-0B06-B83E11656792" name="ServicioComedor_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>8C179416-A28E-B598-CBE1-5D72C7B45F7E</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B47540A5-1953-C3F7-BEDF-38A49FB2712C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74C933B4-DAD5-60A8-2ED9-9BBE07D3EDA4" name="ServicioComedor_EmpleadoHosteria_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>78028DE7-446B-B86C-E981-6FBAE9A8EFC8</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC18782F-8BBA-1209-0C0D-98461B642E1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

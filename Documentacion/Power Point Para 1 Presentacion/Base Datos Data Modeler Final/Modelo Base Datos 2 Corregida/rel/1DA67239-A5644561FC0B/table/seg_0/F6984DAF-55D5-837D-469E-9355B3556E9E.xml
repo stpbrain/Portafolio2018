@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6984DAF-55D5-837D-469E-9355B3556E9E" name="Producto">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>76D5880B-C10D-3D87-B0FC-AD703918825E</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ProductoId" id="EFD719AC-9F04-2C74-71D9-8A318A355D71">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>FC673820-9EB3-C52D-821F-873DC73F0B41</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NombreProducto" id="2E7D8D90-90D1-939F-EED6-1A1882F6C643">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>D3D917CC-E944-E489-F7D6-40E3A348CBF7</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrecioProducto" id="17864F74-D799-BE59-3DC5-2EBFE4291B6A">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>8BBC6915-49E9-CB8C-72F3-811BFA93D927</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoProducto" id="7660E8F0-0B86-C5D6-F869-CD05DAC867A6">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>18F4FBB1-084A-564F-94B9-611DB0DC469A</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="61F9E4D8-BA7B-2F23-4111-DDB62E870ADC">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>6BFBFAEF-C6A5-3194-4EFD-7C938CCC6735</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stock" id="A85CACE7-0602-9241-2173-FDAEF40DDB96">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>2574AF2C-165B-2D17-7E31-D0322AFA21C1</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_elavoracion" id="D1CE988B-C47A-61F6-7694-AB3B3875A6CE">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>F2E65B71-B4B6-EF0C-5CBE-60BB06BD7EE2</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_vencimiento" id="69C079A3-A330-08F8-1A25-7308A370526D">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>6802D1E9-1476-D346-48F4-CDE1F5D74990</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Proveedor_ProveedorId" id="0A8EFD24-8067-17EB-441D-1DB405496BF8">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>91573CA1-C5D1-9640-9CA1-D545E6BB6825</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7B3A02D-3EC0-FE15-B8DA-C92BDFB865BC" referredColumn="8661B7C2-7A64-F894-7A39-7BC323F8106C"/>
+</associations>
+</Column>
+<Column name="Hostal_HostalId" id="94213D89-AB96-DFEB-AF1F-E0BF7C0573DD">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:25:50 UTC</createdTime>
+<generatorID>2128B800-09E1-46A1-DB69-1F30F3FB1434</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B623B5A-90A8-B5DF-5A00-05A9F9BC2916" referredColumn="02C9BCAC-750C-3838-E0ED-AB0EC478DCA5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F864C760-8E75-331F-0B23-C3B264E7B949" name="Producto_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>7AC12156-A812-3BF4-5778-6E666394E77A</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD719AC-9F04-2C74-71D9-8A318A355D71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BE8C9CC-3DE6-A34D-76E8-71513869416B" name="Producto_Proveedor_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>09C8FB31-F9A6-2F78-5BBB-AE06D99055EA</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A8EFD24-8067-17EB-441D-1DB405496BF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4F05703-DF5D-3E66-7B4E-6B248F1FCD74" name="Producto_Hostal_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:25:50 UTC</createdTime>
+<generatorID>EA5BADAC-AD77-C515-8130-E5626B798C79</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94213D89-AB96-DFEB-AF1F-E0BF7C0573DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

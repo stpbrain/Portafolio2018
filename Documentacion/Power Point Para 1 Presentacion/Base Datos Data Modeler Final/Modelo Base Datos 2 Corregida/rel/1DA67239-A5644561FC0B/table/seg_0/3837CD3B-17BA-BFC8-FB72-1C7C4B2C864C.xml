@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3837CD3B-17BA-BFC8-FB72-1C7C4B2C864C" name="Reserva">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>7A43C907-B786-BD15-8B88-8BCEA729A5D6</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nro_reserva" id="B683DD91-7003-3EC9-82E0-10FA518A52AB">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>68159ED1-10CB-8CD3-3D33-A6CAF31B0DD9</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nro_habitacion" id="382800C5-63D8-5A5B-6418-F3C38728597D">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>4C984C73-8FED-D199-CC97-2630369E2FD9</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Check-in" id="83009CC8-94CC-C4C1-6536-A3BEAA044751">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>5C6CBCBC-0534-8F9C-BCD4-B5F559D4C318</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Check_out" id="BC7B2075-BDBE-4D5B-CC4C-0E7A51691F06">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>F41E2EA3-5269-3B72-CFA9-9D2ADD295912</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmpresaCliente_EmpresaId" id="86BC9426-1886-F047-376B-6136BB738609">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>CFB666AF-3951-C9AC-85F4-3E1B5641BCFC</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58D0EB40-8A7B-BBE8-8DAA-78318CE3E59B" referredColumn="DDE370AF-38A5-8BC3-5E24-21E18B5C852B"/>
+</associations>
+</Column>
+<Column name="ReservaId" id="54215A8A-260A-33FF-2988-C7F697E9ABA7">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:39:45 UTC</createdTime>
+<generatorID>99CD082B-5116-66CC-05CB-B85C2AE63ABD</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D4EA87F-B51A-1636-7C60-B394FF8520C6" name="Reserva_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>AD3E029D-FDFF-A2F0-2702-331753EEE8DF</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54215A8A-260A-33FF-2988-C7F697E9ABA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E23E0D8-36EA-3600-9254-D1C6A44D0E4C" name="Reserva_EmpresaCliente_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>4719B0AD-B7FB-3853-B779-F32B96CD40FF</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86BC9426-1886-F047-376B-6136BB738609"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
