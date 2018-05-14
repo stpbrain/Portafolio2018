@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PortafolioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="APEX__WS_LINKS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DATA_GRID_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ROW_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WEBPAGE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPONENT_LEVEL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TAGS" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="SHOW_ON_HOMEPAGE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="LINK_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="URL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LINK_DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="DISPLAY_SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="APEX__WS_ROWS" Relationship="Self.APEX__WS_LINKS_FK" FromRole="APEX__WS_LINKS" ToRole="APEX__WS_ROWS" />
+  </EntityType>
+  <EntityType Name="APEX__WS_NOTES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DATA_GRID_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ROW_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WEBPAGE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPONENT_LEVEL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="APEX__WS_ROWS" Relationship="Self.APEX__WS_NOTES_FK" FromRole="APEX__WS_NOTES" ToRole="APEX__WS_ROWS" />
+  </EntityType>
+  <EntityType Name="APEX__WS_ROWS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DATA_GRID_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="UNIQUE_VALUE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="TAGS" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="PARENT_ROW_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="OWNER" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="GEOCODE" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+    <Property Name="LOAD_ORDER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CHANGE_COUNT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="C001" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C002" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C003" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C004" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C005" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C006" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C007" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C008" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C009" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C010" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C011" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C012" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C013" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C014" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C015" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C016" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C017" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C018" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C019" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C020" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C021" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C022" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C023" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C024" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C025" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C026" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C027" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C028" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C029" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C030" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C031" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C032" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C033" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C034" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C035" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C036" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C037" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C038" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C039" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C040" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C041" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C042" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C043" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C044" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C045" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C046" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C047" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C048" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C049" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="C050" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="N001" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N002" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N003" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N004" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N005" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N006" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N007" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N008" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N009" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N010" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N011" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N012" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N013" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N014" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N015" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N016" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N017" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N018" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N019" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N020" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N021" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N022" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N023" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N024" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N025" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N026" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N027" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N028" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N029" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N030" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N031" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N032" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N033" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N034" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N035" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N036" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N037" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N038" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N039" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N040" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N041" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N042" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N043" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N044" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N045" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N046" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N047" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N048" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N049" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="N050" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="D001" Type="DateTime" />
+    <Property Name="D002" Type="DateTime" />
+    <Property Name="D003" Type="DateTime" />
+    <Property Name="D004" Type="DateTime" />
+    <Property Name="D005" Type="DateTime" />
+    <Property Name="D006" Type="DateTime" />
+    <Property Name="D007" Type="DateTime" />
+    <Property Name="D008" Type="DateTime" />
+    <Property Name="D009" Type="DateTime" />
+    <Property Name="D010" Type="DateTime" />
+    <Property Name="D011" Type="DateTime" />
+    <Property Name="D012" Type="DateTime" />
+    <Property Name="D013" Type="DateTime" />
+    <Property Name="D014" Type="DateTime" />
+    <Property Name="D015" Type="DateTime" />
+    <Property Name="D016" Type="DateTime" />
+    <Property Name="D017" Type="DateTime" />
+    <Property Name="D018" Type="DateTime" />
+    <Property Name="D019" Type="DateTime" />
+    <Property Name="D020" Type="DateTime" />
+    <Property Name="D021" Type="DateTime" />
+    <Property Name="D022" Type="DateTime" />
+    <Property Name="D023" Type="DateTime" />
+    <Property Name="D024" Type="DateTime" />
+    <Property Name="D025" Type="DateTime" />
+    <Property Name="D026" Type="DateTime" />
+    <Property Name="D027" Type="DateTime" />
+    <Property Name="D028" Type="DateTime" />
+    <Property Name="D029" Type="DateTime" />
+    <Property Name="D030" Type="DateTime" />
+    <Property Name="D031" Type="DateTime" />
+    <Property Name="D032" Type="DateTime" />
+    <Property Name="D033" Type="DateTime" />
+    <Property Name="D034" Type="DateTime" />
+    <Property Name="D035" Type="DateTime" />
+    <Property Name="D036" Type="DateTime" />
+    <Property Name="D037" Type="DateTime" />
+    <Property Name="D038" Type="DateTime" />
+    <Property Name="D039" Type="DateTime" />
+    <Property Name="D040" Type="DateTime" />
+    <Property Name="D041" Type="DateTime" />
+    <Property Name="D042" Type="DateTime" />
+    <Property Name="D043" Type="DateTime" />
+    <Property Name="D044" Type="DateTime" />
+    <Property Name="D045" Type="DateTime" />
+    <Property Name="D046" Type="DateTime" />
+    <Property Name="D047" Type="DateTime" />
+    <Property Name="D048" Type="DateTime" />
+    <Property Name="D049" Type="DateTime" />
+    <Property Name="D050" Type="DateTime" />
+    <Property Name="CLOB001" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SEARCH_CLOB" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="APEX__WS_LINKS" Relationship="Self.APEX__WS_LINKS_FK" FromRole="APEX__WS_ROWS" ToRole="APEX__WS_LINKS" />
+    <NavigationProperty Name="APEX__WS_NOTES" Relationship="Self.APEX__WS_NOTES_FK" FromRole="APEX__WS_ROWS" ToRole="APEX__WS_NOTES" />
+    <NavigationProperty Name="APEX_WS_FILES" Relationship="Self.APEX__WS_FILES_FK" FromRole="APEX__WS_ROWS" ToRole="APEX_WS_FILES" />
+    <NavigationProperty Name="APEX__WS_TAGS" Relationship="Self.APEX__WS_TAGS_FK" FromRole="APEX__WS_ROWS" ToRole="APEX__WS_TAGS" />
+  </EntityType>
+  <EntityType Name="APEX__WS_TAGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DATA_GRID_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ROW_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WEBPAGE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPONENT_LEVEL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TAG" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="APEX__WS_ROWS" Relationship="Self.APEX__WS_TAGS_FK" FromRole="APEX__WS_TAGS" ToRole="APEX__WS_ROWS" />
+  </EntityType>
+  <EntityType Name="APEX__WS_WEBPG_SECTIONS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WEBPAGE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DISPLAY_SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SECTION_TYPE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TITLE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CONTENT_UPPER" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="NAV_START_WEBPAGE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NAV_MAX_LEVEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NAV_INCLUDE_LINK" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="DATA_GRID_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="REPORT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DATA_SECTION_STYLE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CHART_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CHART_3D" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="CHART_LABEL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="LABEL_AXIS_TITLE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CHART_VALUE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="VALUE_AXIS_TITLE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CHART_AGGREGATE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CHART_SORTING" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="APEX_WS_FILES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DATA_GRID_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ROW_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WEBPAGE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="COMPONENT_LEVEL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IMAGE_ALIAS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IMAGE_ATTRIBUTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CONTENT" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CONTENT_LAST_UPDATE" Type="DateTime" />
+    <Property Name="MIME_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CONTENT_CHARSET" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CONTENT_FILENAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="APEX__WS_ROWS" Relationship="Self.APEX__WS_FILES_FK" FromRole="APEX_WS_FILES" ToRole="APEX__WS_ROWS" />
+  </EntityType>
+  <EntityType Name="APEX1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="USERNAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRIV" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_ON" Type="DateTime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDATED_ON" Type="DateTime" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="COMPPROD">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="PRODUCTOID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CANTIDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="UPC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRECIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="COMPRAS" Relationship="Self.COMPRAS_FK" FromRole="COMPPROD" ToRole="COMPRAS" />
+    <NavigationProperty Name="PRODUCTO" Relationship="Self.PRODUCTO_FK" FromRole="COMPPROD" ToRole="PRODUCTO" />
+  </EntityType>
+  <EntityType Name="COMPRAS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHA" Type="DateTime" Nullable="false" />
+    <Property Name="FECHAPAGO" Type="DateTime" />
+    <Property Name="FECHARECEPCION" Type="DateTime" />
+    <Property Name="TOTAL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID1" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="COMPPROD" Relationship="Self.COMPRAS_FK" FromRole="COMPRAS" ToRole="COMPPROD" />
+    <NavigationProperty Name="STOCK" Relationship="Self.STOCK_FK" FromRole="COMPRAS" ToRole="STOCK" />
+  </EntityType>
+  <EntityType Name="DEMO_CUSTOMERS">
+    <Key>
+      <PropertyRef Name="CUSTOMER_ID" />
+    </Key>
+    <Property Name="CUSTOMER_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUST_FIRST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUST_LAST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUST_STREET_ADDRESS1" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="CUST_STREET_ADDRESS2" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="CUST_CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CUST_STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="CUST_POSTAL_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE_NUMBER1" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE_NUMBER2" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="CREDIT_LIMIT" Type="Decimal" Precision="9" Scale="2" />
+    <Property Name="CUST_EMAIL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DEMO_ORDERS" Relationship="Self.DEMO_ORDERS_CUSTOMER_ID_FK" FromRole="DEMO_CUSTOMERS" ToRole="DEMO_ORDERS" />
+  </EntityType>
+  <EntityType Name="DEMO_ORDER_ITEMS">
+    <Key>
+      <PropertyRef Name="ORDER_ITEM_ID" />
+    </Key>
+    <Property Name="ORDER_ITEM_ID" Type="Byte" Nullable="false" />
+    <Property Name="ORDER_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="UNIT_PRICE" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="QUANTITY" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DEMO_ORDERS" Relationship="Self.DEMO_ORDER_ITEMS_FK" FromRole="DEMO_ORDER_ITEMS" ToRole="DEMO_ORDERS" />
+    <NavigationProperty Name="DEMO_PRODUCT_INFO" Relationship="Self.DEMO_ORDER_ITEMS_PRODUCT_ID_FK" FromRole="DEMO_ORDER_ITEMS" ToRole="DEMO_PRODUCT_INFO" />
+  </EntityType>
+  <EntityType Name="DEMO_ORDERS">
+    <Key>
+      <PropertyRef Name="ORDER_ID" />
+    </Key>
+    <Property Name="ORDER_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUSTOMER_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ORDER_TOTAL" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="ORDER_TIMESTAMP" Type="DateTime" />
+    <Property Name="USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="DEMO_CUSTOMERS" Relationship="Self.DEMO_ORDERS_CUSTOMER_ID_FK" FromRole="DEMO_ORDERS" ToRole="DEMO_CUSTOMERS" />
+    <NavigationProperty Name="DEMO_ORDER_ITEMS" Relationship="Self.DEMO_ORDER_ITEMS_FK" FromRole="DEMO_ORDERS" ToRole="DEMO_ORDER_ITEMS" />
+    <NavigationProperty Name="DEMO_USERS" Relationship="Self.DEMO_ORDERS_USER_ID_FK" FromRole="DEMO_ORDERS" ToRole="DEMO_USERS" />
+  </EntityType>
+  <EntityType Name="DEMO_PRODUCT_INFO">
+    <Key>
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="PRODUCT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_DESCRIPTION" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="CATEGORY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_AVAIL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="LIST_PRICE" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="PRODUCT_IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="MIMETYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="FILENAME" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="IMAGE_LAST_UPDATE" Type="DateTime" />
+    <NavigationProperty Name="DEMO_ORDER_ITEMS" Relationship="Self.DEMO_ORDER_ITEMS_PRODUCT_ID_FK" FromRole="DEMO_PRODUCT_INFO" ToRole="DEMO_ORDER_ITEMS" />
+  </EntityType>
+  <EntityType Name="DEMO_USERS">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_ON" Type="DateTime" />
+    <Property Name="QUOTA" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PRODUCTS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="EXPIRES_ON" Type="DateTime" />
+    <Property Name="ADMIN_USER" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="DEMO_ORDERS" Relationship="Self.DEMO_ORDERS_USER_ID_FK" FromRole="DEMO_USERS" ToRole="DEMO_ORDERS" />
+  </EntityType>
+  <EntityType Name="DEPT">
+    <Key>
+      <PropertyRef Name="DEPTNO" />
+    </Key>
+    <Property Name="DEPTNO" Type="Byte" Nullable="false" />
+    <Property Name="DNAME" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="LOC" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EMP" Relationship="Self.SYS_C006991" FromRole="DEPT" ToRole="EMP" />
+  </EntityType>
+  <EntityType Name="EMP">
+    <Key>
+      <PropertyRef Name="EMPNO" />
+    </Key>
+    <Property Name="EMPNO" Type="Int16" Nullable="false" />
+    <Property Name="ENAME" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="JOB" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="MGR" Type="Int16" />
+    <Property Name="HIREDATE" Type="DateTime" />
+    <Property Name="SAL" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="COMM" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="DEPTNO" Type="Byte" />
+    <NavigationProperty Name="DEPT" Relationship="Self.SYS_C006991" FromRole="EMP" ToRole="DEPT" />
+    <NavigationProperty Name="EMP1" Relationship="Self.SYS_C006990" FromRole="EMP" ToRole="EMP1" />
+    <NavigationProperty Name="EMP2" Relationship="Self.SYS_C006990" FromRole="EMP1" ToRole="EMP" />
+  </EntityType>
+  <EntityType Name="EMPLEADOHOSTERIA">
+    <Key>
+      <PropertyRef Name="EMPLEADOHOSTERIAID" />
+    </Key>
+    <Property Name="EMPLEADOHOSTERIAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CODIGO_TIPO_EMPLEADO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="RUTEMPLEADO" Type="Int32" Nullable="false" />
+    <Property Name="NOMBREEMPLEADO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELEFONOEMPLEADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="APELLIDOEMPLEADO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SERVICIOCOMEDOR" Relationship="Self.EMPLEADOHOSTERIA_FK" FromRole="EMPLEADOHOSTERIA" ToRole="SERVICIOCOMEDOR" />
+  </EntityType>
+  <EntityType Name="EMPRESACLIENTE">
+    <Key>
+      <PropertyRef Name="EMPRESACLIENTEID" />
+    </Key>
+    <Property Name="EMPRESACLIENTEID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUTEMPRESA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBREEMPRESA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CONTRASEÑA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELEFONO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="RESERVA" Relationship="Self.EMPRESACLIENTE_FK" FromRole="EMPRESACLIENTE" ToRole="RESERVA" />
+    <NavigationProperty Name="HUESPED" Relationship="Self.EMPRESACLIENTE_FKV2" FromRole="EMPRESACLIENTE" ToRole="HUESPED" />
+    <NavigationProperty Name="HUESPED1" Relationship="Self.HUESPED_EMPRESACLIENTE_FK" FromRole="EMPRESACLIENTE" ToRole="HUESPED" />
+    <NavigationProperty Name="HUESPED2" Relationship="Self.EMPRESA_HUESPED" FromRole="EMPRESACLIENTE" ToRole="HUESPED" />
+  </EntityType>
+  <EntityType Name="FACTURACIONPROVEEDOR">
+    <Key>
+      <PropertyRef Name="FACTURACIONPROVEEDORID" />
+      <PropertyRef Name="PROVEEDORID" />
+    </Key>
+    <Property Name="FACTURACIONPROVEEDORID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHAPAGO" Type="DateTime" Nullable="false" />
+    <Property Name="FECHARECEPCION" Type="DateTime" Nullable="false" />
+    <Property Name="FECHA_PAGO_2" Type="DateTime" />
+    <Property Name="PROVEEDORID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="PROVEEDOR" Relationship="Self.PROVEEDOR_FKV1" FromRole="FACTURACIONPROVEEDOR" ToRole="PROVEEDOR" />
+  </EntityType>
+  <EntityType Name="FUNCIONARIO">
+    <Key>
+      <PropertyRef Name="FUNCIONARIOID" />
+    </Key>
+    <Property Name="FUNCIONARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CONTRASEÑA" Type="Int32" Nullable="false" />
+    <Property Name="ID_NIVEL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="PERFIL" Relationship="Self.NIVELUSUARIO_FUNCIONARIO_FK" FromRole="FUNCIONARIO" ToRole="PERFIL" />
+    <NavigationProperty Name="PERFIL1" Relationship="Self.RELATION_29" FromRole="FUNCIONARIO" ToRole="PERFIL" />
+  </EntityType>
+  <EntityType Name="HABITACION">
+    <Key>
+      <PropertyRef Name="NUMHAB" />
+    </Key>
+    <Property Name="NUMHAB" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRECIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DISPONIBLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RESERVA_NRO_RESERVA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RESERVAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="TIPOHABITACIONID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TIPO_HABITACION" Relationship="Self.HABITACION_FK" FromRole="HABITACION" ToRole="TIPO_HABITACION" />
+    <NavigationProperty Name="RESERVA" Relationship="Self.HABITACION_RESERVA_FK" FromRole="HABITACION" ToRole="RESERVA" />
+    <NavigationProperty Name="RESERVA1" Relationship="Self.RESERVA_FK" FromRole="HABITACION" ToRole="RESERVA" />
+    <NavigationProperty Name="RESERVA2" Relationship="Self.RESHAB" FromRole="HABITACION" ToRole="RESERVA" />
+  </EntityType>
+  <EntityType Name="HISTFACTURAS">
+    <Key>
+      <PropertyRef Name="FACTURAID" />
+    </Key>
+    <Property Name="NRO_ORDEN_COMPRA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHACREACION" Type="DateTime" Nullable="false" />
+    <Property Name="FECHARECEPCION" Type="DateTime" Nullable="false" />
+    <Property Name="ORDENCOMPRANUMERO_1" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHAPAGO" Type="DateTime" Nullable="false" />
+    <Property Name="FACTURAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ORDENCOMPRANUMERO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="RESERVA" Relationship="Self.HISTFACTURAS_FK" FromRole="HISTFACTURAS" ToRole="RESERVA" />
+  </EntityType>
+  <EntityType Name="HUESPED">
+    <Key>
+      <PropertyRef Name="HUESPEDID" />
+    </Key>
+    <Property Name="HUESPEDID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APELLIDO_PATERNO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APELLIDO_MATERNO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GENERO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NIVEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CLIENTE_RUT_EMPRESA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EMPCLI_EMPCLIID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EMPRESACLIENTEID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="EMPRESACLIENTE" Relationship="Self.EMPRESACLIENTE_FKV2" FromRole="HUESPED" ToRole="EMPRESACLIENTE" />
+    <NavigationProperty Name="EMPRESACLIENTE1" Relationship="Self.HUESPED_EMPRESACLIENTE_FK" FromRole="HUESPED" ToRole="EMPRESACLIENTE" />
+    <NavigationProperty Name="RELATION_26" Relationship="Self.HUESPED_FK" FromRole="HUESPED" ToRole="RELATION_26" />
+    <NavigationProperty Name="EMPRESACLIENTE2" Relationship="Self.EMPRESA_HUESPED" FromRole="HUESPED" ToRole="EMPRESACLIENTE" />
+  </EntityType>
+  <EntityType Name="INVENTARIO">
+    <Key>
+      <PropertyRef Name="INVENTARIOID" />
+    </Key>
+    <Property Name="INVENTARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTOINVENTARIO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHARECEPCION" Type="DateTime" Nullable="false" />
+    <Property Name="FECHAVENCIMIENTO" Type="DateTime" Nullable="false" />
+    <Property Name="CANTIDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUTPROVEEDOR" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTO_PRODUCTOID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MOVIMIENTOINVENTARIO">
+    <Key>
+      <PropertyRef Name="MOVIMIENTOINVENTARIOID" />
+    </Key>
+    <Property Name="MOVIMIENTOINVENTARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CANTIDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="INVENTARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBSERVACION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="INVENTARIO_INVENTARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="STOCK" Relationship="Self.MOVINV_INV_FK" FromRole="MOVIMIENTOINVENTARIO" ToRole="STOCK" />
+    <NavigationProperty Name="STOCK1" Relationship="Self.RELATION_15" FromRole="MOVIMIENTOINVENTARIO" ToRole="STOCK" />
+  </EntityType>
+  <EntityType Name="NIVELUSUARIO">
+    <Key>
+      <PropertyRef Name="NIVELUSUARIOID" />
+    </Key>
+    <Property Name="NIVELUSUARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ADMINISTRADOR" Type="Byte" />
+    <Property Name="CLIENTE" Type="Byte" />
+    <Property Name="EMPLEADO" Type="Byte" />
+    <Property Name="PROVEEDOR" Type="Byte" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FUNCIONARIO_FUNCIONARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERFIL">
+    <Key>
+      <PropertyRef Name="PERFILID" />
+    </Key>
+    <Property Name="PERFILID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ADMINISTRADOR" Type="Byte" />
+    <Property Name="CLIENTE" Type="Byte" />
+    <Property Name="EMPLEADO" Type="Byte" />
+    <Property Name="PROVEEDOR" Type="Byte" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FUNCIONARIO_FUNCIONARIOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ACCESO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="FUNCIONARIO" Relationship="Self.NIVELUSUARIO_FUNCIONARIO_FK" FromRole="PERFIL" ToRole="FUNCIONARIO" />
+    <NavigationProperty Name="EMPLEADO1" Relationship="Self.PERFIL_FK" FromRole="PERFIL" ToRole="EMPLEADO" />
+    <NavigationProperty Name="FUNCIONARIO1" Relationship="Self.RELATION_29" FromRole="PERFIL" ToRole="FUNCIONARIO" />
+  </EntityType>
+  <EntityType Name="PRODUCTO">
+    <Key>
+      <PropertyRef Name="PRODUCTOID" />
+    </Key>
+    <Property Name="PRODUCTOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRECIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="TIPO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STOCK" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHA_ELABORACION" Type="DateTime" Nullable="false" />
+    <Property Name="FECHA_VENCIMIENTO" Type="DateTime" Nullable="false" />
+    <Property Name="PROVEEDORID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="COMPPROD" Relationship="Self.PRODUCTO_FK" FromRole="PRODUCTO" ToRole="COMPPROD" />
+    <NavigationProperty Name="STOCK1" Relationship="Self.INVENTARIO_PRODUCTO_FK" FromRole="PRODUCTO" ToRole="STOCK" />
+    <NavigationProperty Name="PROVEEDOR" Relationship="Self.PROVEEDOR_FK" FromRole="PRODUCTO" ToRole="PROVEEDOR" />
+    <NavigationProperty Name="PROVEEDOR1" Relationship="Self.PRODPROV" FromRole="PRODUCTO" ToRole="PROVEEDOR" />
+    <NavigationProperty Name="STOCK2" Relationship="Self.RELATION_14" FromRole="PRODUCTO" ToRole="STOCK" />
+  </EntityType>
+  <EntityType Name="PROVEEDOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RUBRO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELEFONO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NIVEL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="FACTURACIONPROVEEDOR" Relationship="Self.PROVEEDOR_FKV1" FromRole="PROVEEDOR" ToRole="FACTURACIONPROVEEDOR" />
+    <NavigationProperty Name="PRODUCTO" Relationship="Self.PROVEEDOR_FK" FromRole="PROVEEDOR" ToRole="PRODUCTO" />
+    <NavigationProperty Name="RELATION_17" Relationship="Self.RELATION_17_PROVEEDOR_FK" FromRole="PROVEEDOR" ToRole="RELATION_17" />
+    <NavigationProperty Name="PRODUCTO1" Relationship="Self.PRODPROV" FromRole="PROVEEDOR" ToRole="PRODUCTO" />
+  </EntityType>
+  <EntityType Name="RELATION_17">
+    <Key>
+      <PropertyRef Name="PROVEEDOR_PROVEEDORID" />
+      <PropertyRef Name="EMPHOST_EMPHOSTID" />
+    </Key>
+    <Property Name="PROVEEDOR_PROVEEDORID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EMPHOST_EMPHOSTID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="PROVEEDOR" Relationship="Self.RELATION_17_PROVEEDOR_FK" FromRole="RELATION_17" ToRole="PROVEEDOR" />
+  </EntityType>
+  <EntityType Name="RELATION_26">
+    <Key>
+      <PropertyRef Name="RESERVAID" />
+      <PropertyRef Name="HUESPEDID" />
+    </Key>
+    <Property Name="RESERVAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="HUESPEDID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ORDENCOMPRA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHAPAGO" Type="DateTime" />
+    <NavigationProperty Name="HUESPED" Relationship="Self.HUESPED_FK" FromRole="RELATION_26" ToRole="HUESPED" />
+    <NavigationProperty Name="RESERVA" Relationship="Self.RESERVA_FKV1" FromRole="RELATION_26" ToRole="RESERVA" />
+  </EntityType>
+  <EntityType Name="RESERVA">
+    <Key>
+      <PropertyRef Name="RESERVAID" />
+    </Key>
+    <Property Name="NRO_RESERVA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NRO_HABITACION" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="Check_in" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CHECK_OUT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EMPRESACLIENTEID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RESERVAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="SERVCOMEDORID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FACTURAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="EMPRESACLIENTE" Relationship="Self.EMPRESACLIENTE_FK" FromRole="RESERVA" ToRole="EMPRESACLIENTE" />
+    <NavigationProperty Name="HABITACION" Relationship="Self.HABITACION_RESERVA_FK" FromRole="RESERVA" ToRole="HABITACION" />
+    <NavigationProperty Name="HABITACION1" Relationship="Self.RESERVA_FK" FromRole="RESERVA" ToRole="HABITACION" />
+    <NavigationProperty Name="HISTFACTURAS" Relationship="Self.HISTFACTURAS_FK" FromRole="RESERVA" ToRole="HISTFACTURAS" />
+    <NavigationProperty Name="RELATION_26" Relationship="Self.RESERVA_FKV1" FromRole="RESERVA" ToRole="RELATION_26" />
+    <NavigationProperty Name="STOCKRESERVA" Relationship="Self.RESERVA_FKV3" FromRole="RESERVA" ToRole="STOCKRESERVA" />
+    <NavigationProperty Name="SERVCOMEDOR" Relationship="Self.SERVCOMEDOR_FK" FromRole="RESERVA" ToRole="SERVCOMEDOR" />
+    <NavigationProperty Name="HABITACION2" Relationship="Self.RESHAB" FromRole="RESERVA" ToRole="HABITACION" />
+  </EntityType>
+  <EntityType Name="SERVCOMEDOR">
+    <Key>
+      <PropertyRef Name="SERVCOMEDORID" />
+    </Key>
+    <Property Name="SERVCOMEDORID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EJECUTIVO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ESPECIAL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="GENERAL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BUFFET" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="EMPLEADOHOSTERIAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="RESERVA" Relationship="Self.SERVCOMEDOR_FK" FromRole="SERVCOMEDOR" ToRole="RESERVA" />
+  </EntityType>
+  <EntityType Name="SERVICIOCOMEDOR">
+    <Key>
+      <PropertyRef Name="SERVICIOCOMEDORID" />
+    </Key>
+    <Property Name="SERVICIOCOMEDORID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EJECUTIVO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ESPECIAL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="GENERAL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BUFFET" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="EMPLEADOHOSTERIAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EMPLEADOHOSTERIA" Relationship="Self.EMPLEADOHOSTERIA_FK" FromRole="SERVICIOCOMEDOR" ToRole="EMPLEADOHOSTERIA" />
+  </EntityType>
+  <EntityType Name="STOCK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTOINVENTARIO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHARECEPCION" Type="DateTime" Nullable="false" />
+    <Property Name="FECHAVENCIMIENTO" Type="DateTime" Nullable="false" />
+    <Property Name="CANTIDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUTPROVEEDOR" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRODUCTO_PRODUCTOID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="STOCKCRITICO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="COMPRAS" Relationship="Self.STOCK_FK" FromRole="STOCK" ToRole="COMPRAS" />
+    <NavigationProperty Name="MOVIMIENTOINVENTARIO" Relationship="Self.MOVINV_INV_FK" FromRole="STOCK" ToRole="MOVIMIENTOINVENTARIO" />
+    <NavigationProperty Name="PRODUCTO" Relationship="Self.INVENTARIO_PRODUCTO_FK" FromRole="STOCK" ToRole="PRODUCTO" />
+    <NavigationProperty Name="STOCKRESERVA" Relationship="Self.STOCK_FKV1" FromRole="STOCK" ToRole="STOCKRESERVA" />
+    <NavigationProperty Name="PRODUCTO1" Relationship="Self.RELATION_14" FromRole="STOCK" ToRole="PRODUCTO" />
+    <NavigationProperty Name="MOVIMIENTOINVENTARIO1" Relationship="Self.RELATION_15" FromRole="STOCK" ToRole="MOVIMIENTOINVENTARIO" />
+  </EntityType>
+  <EntityType Name="STOCKRESERVA">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="RESERVAID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RESERVAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CANTIDAD" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="RESERVA" Relationship="Self.RESERVA_FKV3" FromRole="STOCKRESERVA" ToRole="RESERVA" />
+    <NavigationProperty Name="STOCK" Relationship="Self.STOCK_FKV1" FromRole="STOCKRESERVA" ToRole="STOCK" />
+  </EntityType>
+  <EntityType Name="APEX__WS_HISTORY">
+    <Key>
+      <PropertyRef Name="ROW_ID" />
+      <PropertyRef Name="WS_APP_ID" />
+      <PropertyRef Name="DATA_GRID_ID" />
+    </Key>
+    <Property Name="ROW_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DATA_GRID_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="COLUMN_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="OLD_VALUE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NEW_VALUE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="APPLICATION_USER_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CHANGE_DATE" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="APEX__WS_WEBPG_SECTION_HISTORY">
+    <Key>
+      <PropertyRef Name="SECTION_ID" />
+      <PropertyRef Name="WS_APP_ID" />
+      <PropertyRef Name="WEBPAGE_ID" />
+      <PropertyRef Name="APPLICATION_USER_ID" />
+      <PropertyRef Name="CHANGE_DATE" />
+    </Key>
+    <Property Name="SECTION_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WS_APP_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="WEBPAGE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OLD_DISPLAY_SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NEW_DISPLAY_SEQUENCE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="OLD_TITLE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NEW_TITLE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="OLD_CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="NEW_CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="APPLICATION_USER_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CHANGE_DATE" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="EMPLEADOHOSTERIAID" />
+      <PropertyRef Name="RUTEMPLEADO" />
+      <PropertyRef Name="NOMBREEMPLEADO" />
+      <PropertyRef Name="TELEFONOEMPLEADO" />
+      <PropertyRef Name="APELLIDOEMPLEADO" />
+      <PropertyRef Name="HOSTALID" />
+      <PropertyRef Name="PASSWORD" />
+      <PropertyRef Name="PERFILID" />
+    </Key>
+    <Property Name="EMPLEADOHOSTERIAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CODIGO_TIPO_EMPLEADO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="RUTEMPLEADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBREEMPLEADO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELEFONOEMPLEADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="APELLIDOEMPLEADO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PASSWORD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PERFILID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="PERFIL" Relationship="Self.PERFIL_FK" FromRole="EMPLEADO" ToRole="PERFIL" />
+  </EntityType>
+  <EntityType Name="HOSTAL">
+    <Key>
+      <PropertyRef Name="HOSTALID" />
+      <PropertyRef Name="HOSTALNOMBRE" />
+      <PropertyRef Name="DIRECCION" />
+      <PropertyRef Name="EMPRESAID" />
+    </Key>
+    <Property Name="HOSTALID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="HOSTALNOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMPRESAID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_HABITACION">
+    <Key>
+      <PropertyRef Name="TIPOHABITACIONID" />
+      <PropertyRef Name="DESCRIPCION" />
+      <PropertyRef Name="ESTADO" />
+      <PropertyRef Name="NUMEROHABITACION" />
+    </Key>
+    <Property Name="TIPOHABITACIONID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="NUMEROHABITACION" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="HABITACION" Relationship="Self.HABITACION_FK" FromRole="TIPO_HABITACION" ToRole="HABITACION" />
+  </EntityType>
+  <Association Name="APEX__WS_LINKS_FK">
+    <End Role="APEX__WS_ROWS" Type="Self.APEX__WS_ROWS" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="APEX__WS_LINKS" Type="Self.APEX__WS_LINKS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APEX__WS_ROWS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="APEX__WS_LINKS">
+        <PropertyRef Name="ROW_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="APEX__WS_NOTES_FK">
+    <End Role="APEX__WS_ROWS" Type="Self.APEX__WS_ROWS" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="APEX__WS_NOTES" Type="Self.APEX__WS_NOTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APEX__WS_ROWS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="APEX__WS_NOTES">
+        <PropertyRef Name="ROW_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="APEX__WS_FILES_FK">
+    <End Role="APEX__WS_ROWS" Type="Self.APEX__WS_ROWS" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="APEX_WS_FILES" Type="Self.APEX_WS_FILES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APEX__WS_ROWS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="APEX_WS_FILES">
+        <PropertyRef Name="ROW_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="APEX__WS_TAGS_FK">
+    <End Role="APEX__WS_ROWS" Type="Self.APEX__WS_ROWS" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="APEX__WS_TAGS" Type="Self.APEX__WS_TAGS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APEX__WS_ROWS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="APEX__WS_TAGS">
+        <PropertyRef Name="ROW_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="COMPRAS_FK">
+    <End Role="COMPRAS" Type="Self.COMPRAS" Multiplicity="1" />
+    <End Role="COMPPROD" Type="Self.COMPPROD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="COMPRAS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="COMPPROD">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PRODUCTO_FK">
+    <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="1" />
+    <End Role="COMPPROD" Type="Self.COMPPROD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCTO">
+        <PropertyRef Name="PRODUCTOID" />
+      </Principal>
+      <Dependent Role="COMPPROD">
+        <PropertyRef Name="PRODUCTOID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="STOCK_FK">
+    <End Role="STOCK" Type="Self.STOCK" Multiplicity="1" />
+    <End Role="COMPRAS" Type="Self.COMPRAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STOCK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="COMPRAS">
+        <PropertyRef Name="ID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DEMO_ORDERS_CUSTOMER_ID_FK">
+    <End Role="DEMO_CUSTOMERS" Type="Self.DEMO_CUSTOMERS" Multiplicity="1" />
+    <End Role="DEMO_ORDERS" Type="Self.DEMO_ORDERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEMO_CUSTOMERS">
+        <PropertyRef Name="CUSTOMER_ID" />
+      </Principal>
+      <Dependent Role="DEMO_ORDERS">
+        <PropertyRef Name="CUSTOMER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DEMO_ORDER_ITEMS_FK">
+    <End Role="DEMO_ORDERS" Type="Self.DEMO_ORDERS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DEMO_ORDER_ITEMS" Type="Self.DEMO_ORDER_ITEMS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEMO_ORDERS">
+        <PropertyRef Name="ORDER_ID" />
+      </Principal>
+      <Dependent Role="DEMO_ORDER_ITEMS">
+        <PropertyRef Name="ORDER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DEMO_ORDER_ITEMS_PRODUCT_ID_FK">
+    <End Role="DEMO_PRODUCT_INFO" Type="Self.DEMO_PRODUCT_INFO" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DEMO_ORDER_ITEMS" Type="Self.DEMO_ORDER_ITEMS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEMO_PRODUCT_INFO">
+        <PropertyRef Name="PRODUCT_ID" />
+      </Principal>
+      <Dependent Role="DEMO_ORDER_ITEMS">
+        <PropertyRef Name="PRODUCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DEMO_ORDERS_USER_ID_FK">
+    <End Role="DEMO_USERS" Type="Self.DEMO_USERS" Multiplicity="0..1" />
+    <End Role="DEMO_ORDERS" Type="Self.DEMO_ORDERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEMO_USERS">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="DEMO_ORDERS">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C006991">
+    <End Role="DEPT" Type="Self.DEPT" Multiplicity="0..1" />
+    <End Role="EMP" Type="Self.EMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPT">
+        <PropertyRef Name="DEPTNO" />
+      </Principal>
+      <Dependent Role="EMP">
+        <PropertyRef Name="DEPTNO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C006990">
+    <End Role="EMP" Type="Self.EMP" Multiplicity="0..1" />
+    <End Role="EMP1" Type="Self.EMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMP">
+        <PropertyRef Name="EMPNO" />
+      </Principal>
+      <Dependent Role="EMP1">
+        <PropertyRef Name="MGR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EMPLEADOHOSTERIA_FK">
+    <End Role="EMPLEADOHOSTERIA" Type="Self.EMPLEADOHOSTERIA" Multiplicity="1" />
+    <End Role="SERVICIOCOMEDOR" Type="Self.SERVICIOCOMEDOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADOHOSTERIA">
+        <PropertyRef Name="EMPLEADOHOSTERIAID" />
+      </Principal>
+      <Dependent Role="SERVICIOCOMEDOR">
+        <PropertyRef Name="EMPLEADOHOSTERIAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EMPRESACLIENTE_FK">
+    <End Role="EMPRESACLIENTE" Type="Self.EMPRESACLIENTE" Multiplicity="1" />
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPRESACLIENTE">
+        <PropertyRef Name="EMPRESACLIENTEID" />
+      </Principal>
+      <Dependent Role="RESERVA">
+        <PropertyRef Name="EMPRESACLIENTEID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EMPRESACLIENTE_FKV2">
+    <End Role="EMPRESACLIENTE" Type="Self.EMPRESACLIENTE" Multiplicity="1" />
+    <End Role="HUESPED" Type="Self.HUESPED" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPRESACLIENTE">
+        <PropertyRef Name="EMPRESACLIENTEID" />
+      </Principal>
+      <Dependent Role="HUESPED">
+        <PropertyRef Name="EMPRESACLIENTEID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HUESPED_EMPRESACLIENTE_FK">
+    <End Role="EMPRESACLIENTE" Type="Self.EMPRESACLIENTE" Multiplicity="1" />
+    <End Role="HUESPED" Type="Self.HUESPED" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPRESACLIENTE">
+        <PropertyRef Name="EMPRESACLIENTEID" />
+      </Principal>
+      <Dependent Role="HUESPED">
+        <PropertyRef Name="EMPCLI_EMPCLIID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PROVEEDOR_FKV1">
+    <End Role="PROVEEDOR" Type="Self.PROVEEDOR" Multiplicity="1" />
+    <End Role="FACTURACIONPROVEEDOR" Type="Self.FACTURACIONPROVEEDOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVEEDOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FACTURACIONPROVEEDOR">
+        <PropertyRef Name="PROVEEDORID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="NIVELUSUARIO_FUNCIONARIO_FK">
+    <End Role="FUNCIONARIO" Type="Self.FUNCIONARIO" Multiplicity="1" />
+    <End Role="PERFIL" Type="Self.PERFIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FUNCIONARIO">
+        <PropertyRef Name="FUNCIONARIOID" />
+      </Principal>
+      <Dependent Role="PERFIL">
+        <PropertyRef Name="FUNCIONARIO_FUNCIONARIOID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HABITACION_FK">
+    <End Role="HABITACION" Type="Self.HABITACION" Multiplicity="1" />
+    <End Role="TIPO_HABITACION" Type="Self.TIPO_HABITACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HABITACION">
+        <PropertyRef Name="NUMHAB" />
+      </Principal>
+      <Dependent Role="TIPO_HABITACION">
+        <PropertyRef Name="NUMEROHABITACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HABITACION_RESERVA_FK">
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="1" />
+    <End Role="HABITACION" Type="Self.HABITACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RESERVA">
+        <PropertyRef Name="RESERVAID" />
+      </Principal>
+      <Dependent Role="HABITACION">
+        <PropertyRef Name="RESERVA_NRO_RESERVA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RESERVA_FK">
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="1" />
+    <End Role="HABITACION" Type="Self.HABITACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RESERVA">
+        <PropertyRef Name="RESERVAID" />
+      </Principal>
+      <Dependent Role="HABITACION">
+        <PropertyRef Name="RESERVAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HISTFACTURAS_FK">
+    <End Role="HISTFACTURAS" Type="Self.HISTFACTURAS" Multiplicity="1" />
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HISTFACTURAS">
+        <PropertyRef Name="FACTURAID" />
+      </Principal>
+      <Dependent Role="RESERVA">
+        <PropertyRef Name="FACTURAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HUESPED_FK">
+    <End Role="HUESPED" Type="Self.HUESPED" Multiplicity="1" />
+    <End Role="RELATION_26" Type="Self.RELATION_26" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HUESPED">
+        <PropertyRef Name="HUESPEDID" />
+      </Principal>
+      <Dependent Role="RELATION_26">
+        <PropertyRef Name="HUESPEDID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MOVINV_INV_FK">
+    <End Role="STOCK" Type="Self.STOCK" Multiplicity="1" />
+    <End Role="MOVIMIENTOINVENTARIO" Type="Self.MOVIMIENTOINVENTARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STOCK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MOVIMIENTOINVENTARIO">
+        <PropertyRef Name="INVENTARIO_INVENTARIOID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PERFIL_FK">
+    <End Role="PERFIL" Type="Self.PERFIL" Multiplicity="1" />
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERFIL">
+        <PropertyRef Name="PERFILID" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="PERFILID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="INVENTARIO_PRODUCTO_FK">
+    <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="1" />
+    <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCTO">
+        <PropertyRef Name="PRODUCTOID" />
+      </Principal>
+      <Dependent Role="STOCK">
+        <PropertyRef Name="PRODUCTO_PRODUCTOID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PROVEEDOR_FK">
+    <End Role="PROVEEDOR" Type="Self.PROVEEDOR" Multiplicity="1" />
+    <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVEEDOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCTO">
+        <PropertyRef Name="PROVEEDORID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RELATION_17_PROVEEDOR_FK">
+    <End Role="PROVEEDOR" Type="Self.PROVEEDOR" Multiplicity="1" />
+    <End Role="RELATION_17" Type="Self.RELATION_17" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVEEDOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RELATION_17">
+        <PropertyRef Name="PROVEEDOR_PROVEEDORID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RESERVA_FKV1">
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="1" />
+    <End Role="RELATION_26" Type="Self.RELATION_26" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RESERVA">
+        <PropertyRef Name="RESERVAID" />
+      </Principal>
+      <Dependent Role="RELATION_26">
+        <PropertyRef Name="RESERVAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RESERVA_FKV3">
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="1" />
+    <End Role="STOCKRESERVA" Type="Self.STOCKRESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RESERVA">
+        <PropertyRef Name="RESERVAID" />
+      </Principal>
+      <Dependent Role="STOCKRESERVA">
+        <PropertyRef Name="RESERVAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SERVCOMEDOR_FK">
+    <End Role="SERVCOMEDOR" Type="Self.SERVCOMEDOR" Multiplicity="0..1" />
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVCOMEDOR">
+        <PropertyRef Name="SERVCOMEDORID" />
+      </Principal>
+      <Dependent Role="RESERVA">
+        <PropertyRef Name="SERVCOMEDORID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="STOCK_FKV1">
+    <End Role="STOCK" Type="Self.STOCK" Multiplicity="1" />
+    <End Role="STOCKRESERVA" Type="Self.STOCKRESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STOCK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="STOCKRESERVA">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EMPRESA_HUESPED">
+    <End Role="EMPRESACLIENTE" Type="Self.EMPRESACLIENTE" Multiplicity="*" />
+    <End Role="HUESPED" Type="Self.HUESPED" Multiplicity="*" />
+  </Association>
+  <Association Name="PRODPROV">
+    <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="*" />
+    <End Role="PROVEEDOR" Type="Self.PROVEEDOR" Multiplicity="*" />
+  </Association>
+  <Association Name="RELATION_14">
+    <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+    <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="*" />
+  </Association>
+  <Association Name="RELATION_15">
+    <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+    <End Role="MOVIMIENTOINVENTARIO" Type="Self.MOVIMIENTOINVENTARIO" Multiplicity="*" />
+  </Association>
+  <Association Name="RELATION_29">
+    <End Role="FUNCIONARIO" Type="Self.FUNCIONARIO" Multiplicity="*" />
+    <End Role="PERFIL" Type="Self.PERFIL" Multiplicity="*" />
+  </Association>
+  <Association Name="RESHAB">
+    <End Role="HABITACION" Type="Self.HABITACION" Multiplicity="*" />
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="APEX__WS_LINKS" EntityType="Self.APEX__WS_LINKS" />
+    <EntitySet Name="APEX__WS_NOTES" EntityType="Self.APEX__WS_NOTES" />
+    <EntitySet Name="APEX__WS_ROWS" EntityType="Self.APEX__WS_ROWS" />
+    <EntitySet Name="APEX__WS_TAGS" EntityType="Self.APEX__WS_TAGS" />
+    <EntitySet Name="APEX__WS_WEBPG_SECTIONS" EntityType="Self.APEX__WS_WEBPG_SECTIONS" />
+    <EntitySet Name="APEX_WS_FILES" EntityType="Self.APEX_WS_FILES" />
+    <EntitySet Name="APEX1" EntityType="Self.APEX1" />
+    <EntitySet Name="COMPPROD" EntityType="Self.COMPPROD" />
+    <EntitySet Name="COMPRAS" EntityType="Self.COMPRAS" />
+    <EntitySet Name="DEMO_CUSTOMERS" EntityType="Self.DEMO_CUSTOMERS" />
+    <EntitySet Name="DEMO_ORDER_ITEMS" EntityType="Self.DEMO_ORDER_ITEMS" />
+    <EntitySet Name="DEMO_ORDERS" EntityType="Self.DEMO_ORDERS" />
+    <EntitySet Name="DEMO_PRODUCT_INFO" EntityType="Self.DEMO_PRODUCT_INFO" />
+    <EntitySet Name="DEMO_USERS" EntityType="Self.DEMO_USERS" />
+    <EntitySet Name="DEPT" EntityType="Self.DEPT" />
+    <EntitySet Name="EMP" EntityType="Self.EMP" />
+    <EntitySet Name="EMPLEADOHOSTERIA" EntityType="Self.EMPLEADOHOSTERIA" />
+    <EntitySet Name="EMPRESACLIENTE" EntityType="Self.EMPRESACLIENTE" />
+    <EntitySet Name="FACTURACIONPROVEEDOR" EntityType="Self.FACTURACIONPROVEEDOR" />
+    <EntitySet Name="FUNCIONARIO" EntityType="Self.FUNCIONARIO" />
+    <EntitySet Name="HABITACION" EntityType="Self.HABITACION" />
+    <EntitySet Name="HISTFACTURAS" EntityType="Self.HISTFACTURAS" />
+    <EntitySet Name="HUESPED" EntityType="Self.HUESPED" />
+    <EntitySet Name="INVENTARIO" EntityType="Self.INVENTARIO" />
+    <EntitySet Name="MOVIMIENTOINVENTARIO" EntityType="Self.MOVIMIENTOINVENTARIO" />
+    <EntitySet Name="NIVELUSUARIO" EntityType="Self.NIVELUSUARIO" />
+    <EntitySet Name="PERFIL" EntityType="Self.PERFIL" />
+    <EntitySet Name="PRODUCTO" EntityType="Self.PRODUCTO" />
+    <EntitySet Name="PROVEEDOR" EntityType="Self.PROVEEDOR" />
+    <EntitySet Name="RELATION_17" EntityType="Self.RELATION_17" />
+    <EntitySet Name="RELATION_26" EntityType="Self.RELATION_26" />
+    <EntitySet Name="RESERVA" EntityType="Self.RESERVA" />
+    <EntitySet Name="SERVCOMEDOR" EntityType="Self.SERVCOMEDOR" />
+    <EntitySet Name="SERVICIOCOMEDOR" EntityType="Self.SERVICIOCOMEDOR" />
+    <EntitySet Name="STOCK" EntityType="Self.STOCK" />
+    <EntitySet Name="STOCKRESERVA" EntityType="Self.STOCKRESERVA" />
+    <EntitySet Name="APEX__WS_HISTORY" EntityType="Self.APEX__WS_HISTORY" />
+    <EntitySet Name="APEX__WS_WEBPG_SECTION_HISTORY" EntityType="Self.APEX__WS_WEBPG_SECTION_HISTORY" />
+    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" />
+    <EntitySet Name="HOSTAL" EntityType="Self.HOSTAL" />
+    <EntitySet Name="TIPO_HABITACION" EntityType="Self.TIPO_HABITACION" />
+    <AssociationSet Name="APEX__WS_LINKS_FK" Association="Self.APEX__WS_LINKS_FK">
+      <End Role="APEX__WS_ROWS" EntitySet="APEX__WS_ROWS" />
+      <End Role="APEX__WS_LINKS" EntitySet="APEX__WS_LINKS" />
+    </AssociationSet>
+    <AssociationSet Name="APEX__WS_NOTES_FK" Association="Self.APEX__WS_NOTES_FK">
+      <End Role="APEX__WS_ROWS" EntitySet="APEX__WS_ROWS" />
+      <End Role="APEX__WS_NOTES" EntitySet="APEX__WS_NOTES" />
+    </AssociationSet>
+    <AssociationSet Name="APEX__WS_FILES_FK" Association="Self.APEX__WS_FILES_FK">
+      <End Role="APEX__WS_ROWS" EntitySet="APEX__WS_ROWS" />
+      <End Role="APEX_WS_FILES" EntitySet="APEX_WS_FILES" />
+    </AssociationSet>
+    <AssociationSet Name="APEX__WS_TAGS_FK" Association="Self.APEX__WS_TAGS_FK">
+      <End Role="APEX__WS_ROWS" EntitySet="APEX__WS_ROWS" />
+      <End Role="APEX__WS_TAGS" EntitySet="APEX__WS_TAGS" />
+    </AssociationSet>
+    <AssociationSet Name="COMPRAS_FK" Association="Self.COMPRAS_FK">
+      <End Role="COMPRAS" EntitySet="COMPRAS" />
+      <End Role="COMPPROD" EntitySet="COMPPROD" />
+    </AssociationSet>
+    <AssociationSet Name="PRODUCTO_FK" Association="Self.PRODUCTO_FK">
+      <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+      <End Role="COMPPROD" EntitySet="COMPPROD" />
+    </AssociationSet>
+    <AssociationSet Name="STOCK_FK" Association="Self.STOCK_FK">
+      <End Role="STOCK" EntitySet="STOCK" />
+      <End Role="COMPRAS" EntitySet="COMPRAS" />
+    </AssociationSet>
+    <AssociationSet Name="DEMO_ORDERS_CUSTOMER_ID_FK" Association="Self.DEMO_ORDERS_CUSTOMER_ID_FK">
+      <End Role="DEMO_CUSTOMERS" EntitySet="DEMO_CUSTOMERS" />
+      <End Role="DEMO_ORDERS" EntitySet="DEMO_ORDERS" />
+    </AssociationSet>
+    <AssociationSet Name="DEMO_ORDER_ITEMS_FK" Association="Self.DEMO_ORDER_ITEMS_FK">
+      <End Role="DEMO_ORDERS" EntitySet="DEMO_ORDERS" />
+      <End Role="DEMO_ORDER_ITEMS" EntitySet="DEMO_ORDER_ITEMS" />
+    </AssociationSet>
+    <AssociationSet Name="DEMO_ORDER_ITEMS_PRODUCT_ID_FK" Association="Self.DEMO_ORDER_ITEMS_PRODUCT_ID_FK">
+      <End Role="DEMO_PRODUCT_INFO" EntitySet="DEMO_PRODUCT_INFO" />
+      <End Role="DEMO_ORDER_ITEMS" EntitySet="DEMO_ORDER_ITEMS" />
+    </AssociationSet>
+    <AssociationSet Name="DEMO_ORDERS_USER_ID_FK" Association="Self.DEMO_ORDERS_USER_ID_FK">
+      <End Role="DEMO_USERS" EntitySet="DEMO_USERS" />
+      <End Role="DEMO_ORDERS" EntitySet="DEMO_ORDERS" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C006991" Association="Self.SYS_C006991">
+      <End Role="DEPT" EntitySet="DEPT" />
+      <End Role="EMP" EntitySet="EMP" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C006990" Association="Self.SYS_C006990">
+      <End Role="EMP" EntitySet="EMP" />
+      <End Role="EMP1" EntitySet="EMP" />
+    </AssociationSet>
+    <AssociationSet Name="EMPLEADOHOSTERIA_FK" Association="Self.EMPLEADOHOSTERIA_FK">
+      <End Role="EMPLEADOHOSTERIA" EntitySet="EMPLEADOHOSTERIA" />
+      <End Role="SERVICIOCOMEDOR" EntitySet="SERVICIOCOMEDOR" />
+    </AssociationSet>
+    <AssociationSet Name="EMPRESACLIENTE_FK" Association="Self.EMPRESACLIENTE_FK">
+      <End Role="EMPRESACLIENTE" EntitySet="EMPRESACLIENTE" />
+      <End Role="RESERVA" EntitySet="RESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="EMPRESACLIENTE_FKV2" Association="Self.EMPRESACLIENTE_FKV2">
+      <End Role="EMPRESACLIENTE" EntitySet="EMPRESACLIENTE" />
+      <End Role="HUESPED" EntitySet="HUESPED" />
+    </AssociationSet>
+    <AssociationSet Name="HUESPED_EMPRESACLIENTE_FK" Association="Self.HUESPED_EMPRESACLIENTE_FK">
+      <End Role="EMPRESACLIENTE" EntitySet="EMPRESACLIENTE" />
+      <End Role="HUESPED" EntitySet="HUESPED" />
+    </AssociationSet>
+    <AssociationSet Name="PROVEEDOR_FKV1" Association="Self.PROVEEDOR_FKV1">
+      <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+      <End Role="FACTURACIONPROVEEDOR" EntitySet="FACTURACIONPROVEEDOR" />
+    </AssociationSet>
+    <AssociationSet Name="NIVELUSUARIO_FUNCIONARIO_FK" Association="Self.NIVELUSUARIO_FUNCIONARIO_FK">
+      <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+      <End Role="PERFIL" EntitySet="PERFIL" />
+    </AssociationSet>
+    <AssociationSet Name="HABITACION_FK" Association="Self.HABITACION_FK">
+      <End Role="HABITACION" EntitySet="HABITACION" />
+      <End Role="TIPO_HABITACION" EntitySet="TIPO_HABITACION" />
+    </AssociationSet>
+    <AssociationSet Name="HABITACION_RESERVA_FK" Association="Self.HABITACION_RESERVA_FK">
+      <End Role="RESERVA" EntitySet="RESERVA" />
+      <End Role="HABITACION" EntitySet="HABITACION" />
+    </AssociationSet>
+    <AssociationSet Name="RESERVA_FK" Association="Self.RESERVA_FK">
+      <End Role="RESERVA" EntitySet="RESERVA" />
+      <End Role="HABITACION" EntitySet="HABITACION" />
+    </AssociationSet>
+    <AssociationSet Name="HISTFACTURAS_FK" Association="Self.HISTFACTURAS_FK">
+      <End Role="HISTFACTURAS" EntitySet="HISTFACTURAS" />
+      <End Role="RESERVA" EntitySet="RESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="HUESPED_FK" Association="Self.HUESPED_FK">
+      <End Role="HUESPED" EntitySet="HUESPED" />
+      <End Role="RELATION_26" EntitySet="RELATION_26" />
+    </AssociationSet>
+    <AssociationSet Name="MOVINV_INV_FK" Association="Self.MOVINV_INV_FK">
+      <End Role="STOCK" EntitySet="STOCK" />
+      <End Role="MOVIMIENTOINVENTARIO" EntitySet="MOVIMIENTOINVENTARIO" />
+    </AssociationSet>
+    <AssociationSet Name="PERFIL_FK" Association="Self.PERFIL_FK">
+      <End Role="PERFIL" EntitySet="PERFIL" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="INVENTARIO_PRODUCTO_FK" Association="Self.INVENTARIO_PRODUCTO_FK">
+      <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+      <End Role="STOCK" EntitySet="STOCK" />
+    </AssociationSet>
+    <AssociationSet Name="PROVEEDOR_FK" Association="Self.PROVEEDOR_FK">
+      <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+      <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+    </AssociationSet>
+    <AssociationSet Name="RELATION_17_PROVEEDOR_FK" Association="Self.RELATION_17_PROVEEDOR_FK">
+      <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+      <End Role="RELATION_17" EntitySet="RELATION_17" />
+    </AssociationSet>
+    <AssociationSet Name="RESERVA_FKV1" Association="Self.RESERVA_FKV1">
+      <End Role="RESERVA" EntitySet="RESERVA" />
+      <End Role="RELATION_26" EntitySet="RELATION_26" />
+    </AssociationSet>
+    <AssociationSet Name="RESERVA_FKV3" Association="Self.RESERVA_FKV3">
+      <End Role="RESERVA" EntitySet="RESERVA" />
+      <End Role="STOCKRESERVA" EntitySet="STOCKRESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="SERVCOMEDOR_FK" Association="Self.SERVCOMEDOR_FK">
+      <End Role="SERVCOMEDOR" EntitySet="SERVCOMEDOR" />
+      <End Role="RESERVA" EntitySet="RESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="STOCK_FKV1" Association="Self.STOCK_FKV1">
+      <End Role="STOCK" EntitySet="STOCK" />
+      <End Role="STOCKRESERVA" EntitySet="STOCKRESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="EMPRESA_HUESPED" Association="Self.EMPRESA_HUESPED">
+      <End Role="EMPRESACLIENTE" EntitySet="EMPRESACLIENTE" />
+      <End Role="HUESPED" EntitySet="HUESPED" />
+    </AssociationSet>
+    <AssociationSet Name="PRODPROV" Association="Self.PRODPROV">
+      <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+      <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+    </AssociationSet>
+    <AssociationSet Name="RELATION_14" Association="Self.RELATION_14">
+      <End Role="STOCK" EntitySet="STOCK" />
+      <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+    </AssociationSet>
+    <AssociationSet Name="RELATION_15" Association="Self.RELATION_15">
+      <End Role="STOCK" EntitySet="STOCK" />
+      <End Role="MOVIMIENTOINVENTARIO" EntitySet="MOVIMIENTOINVENTARIO" />
+    </AssociationSet>
+    <AssociationSet Name="RELATION_29" Association="Self.RELATION_29">
+      <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+      <End Role="PERFIL" EntitySet="PERFIL" />
+    </AssociationSet>
+    <AssociationSet Name="RESHAB" Association="Self.RESHAB">
+      <End Role="HABITACION" EntitySet="HABITACION" />
+      <End Role="RESERVA" EntitySet="RESERVA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
