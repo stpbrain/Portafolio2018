@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DC61D5B4-88E3-4A1A-803B-CC43F487C8BC" containerWithKeyObject="0ACC4DE7-9292-A148-A3F0-0F440A60BC3A" localFKIndex="3BD48AF9-D14F-BE9D-9CF2-D3AD9FC2970E" name="ORDENPEDIDO_PROVEEDOR_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>1D376533-DD64-7085-35F6-25F52EC0DCF6</importedID>
+<referredTableLongName>PROVEEDOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BFA9B0F2-2D9C-1DDD-31E5-A6E07A8E837B</referredTableID>
+<keyObject>2C6946F2-50D5-12EE-E116-D2E4C3A481C1</keyObject>
+<referredKeyID>2C6946F2-50D5-12EE-E116-D2E4C3A481C1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PROVEEDOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

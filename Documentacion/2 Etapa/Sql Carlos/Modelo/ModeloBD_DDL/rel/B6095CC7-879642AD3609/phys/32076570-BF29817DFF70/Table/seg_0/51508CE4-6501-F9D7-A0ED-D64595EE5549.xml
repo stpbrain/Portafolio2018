@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RESERVA" directorySegmentName="seg_0" id="51508CE4-6501-F9D7-A0ED-D64595EE5549">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_USUARIO" id="6761AC1E-BDB3-DA2E-86A2-66E36DAD5C68">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CHECKOUT" id="712BE3E7-E070-179B-80AD-D91AF194CF61">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CANT_HUESPEDES" id="DAA8996B-4BFD-EE74-07C6-B6FFDCDFE2B8">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CHECKIN" id="DB28F27E-5126-AB70-E446-90E4A8C3F7DE">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RESERVA" id="E1DF2B9D-1D19-03B3-B2C1-E8B2667F0FA3">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RESERVA_USUARIO_FK" id="3A48777F-DFC1-BECB-FB2D-880145F82BE2">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RESERVA_PK" id="86DFF06F-2197-8957-E9EE-A8C309A3C79A">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

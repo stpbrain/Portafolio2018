@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0ACC4DE7-9292-A148-A3F0-0F440A60BC3A" name="ORDEN_PEDIDO">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>AACC9793-4A00-3445-6BA2-70B13FA045E3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ORDEN_PEDIDO" id="095DF794-33AF-CC14-9732-02120E3E2FE7">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>4E867CCE-C8A7-FAA4-509C-8C0E31592F6A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEC_ORDEN_PEDIDO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_ORDEN_PEDIDOID</autoIncrementTriggerName>
+</Column>
+<Column name="ID_PROVEEDOR" id="56626827-E0D8-1995-024A-9724D37FA768">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>8A5E4146-BA9E-F7D4-B8B4-D12779967ACA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC61D5B4-88E3-4A1A-803B-CC43F487C8BC" referredColumn="5C281282-D148-6275-6A18-DE8641569AD7"/>
+</associations>
+</Column>
+<Column name="FECHA_SOLICITUD" id="5ED5E309-22A3-1AB7-C189-37CBD633CD15">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>E7959D6C-429F-6B27-70BF-BED9040D883D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>92398A9C-3BB3-4CB0-13EF-14F5CD8B79A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_RECEPCION" id="91191C8A-B3CB-B66F-42E5-C1F803F9E961">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>BC02355B-A98C-2710-C908-88A82CC3CB7B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>92398A9C-3BB3-4CB0-13EF-14F5CD8B79A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USUARIO_CREA_OP" id="B4883376-CDD6-2472-A850-928B3A8187DC">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>CE1CD38F-9B4A-C372-FB05-8616D3683149</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92B18A64-041F-80D1-82F5-E1E6BF02855D" referredColumn="23E83EE2-31E3-4383-848D-D94F97DCDE75"/>
+</associations>
+</Column>
+<Column name="OBSERVACIONES" id="BDDBFE5D-15AF-96E2-D362-DE1E4676ADA0">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>855DB063-D8A1-949D-6DD7-F0F698DB4D54</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A6394F1F-A75B-EA6B-DAB3-A14D80D32469</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6236FD2-C12C-9F8C-3F86-33C49AED9822" name="ORDEN_PEDIDO_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>3E777A1C-6549-8260-F235-69DB246CD403</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="095DF794-33AF-CC14-9732-02120E3E2FE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BD48AF9-D14F-BE9D-9CF2-D3AD9FC2970E" name="ORDENPEDIDO_PROVEEDOR_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56626827-E0D8-1995-024A-9724D37FA768"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0652AB85-4275-4957-49B3-78A06B97BD06" name="ORDENPEDIDO_USUARIO_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4883376-CDD6-2472-A850-928B3A8187DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

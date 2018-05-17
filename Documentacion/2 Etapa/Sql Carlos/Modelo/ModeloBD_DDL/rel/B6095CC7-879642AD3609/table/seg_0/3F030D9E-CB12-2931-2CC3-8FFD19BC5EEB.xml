@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F030D9E-CB12-2931-2CC3-8FFD19BC5EEB" name="TIPO_CAMBIO">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>64F7CCB9-8D68-D460-F6AD-5AC4E71CC52F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_CAMBIO" id="EA8E316C-4A2F-B1A3-478B-E9282F7E7562">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>8E15498A-51A5-F06B-24B5-55F18E331AB2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEC_TIPO_CAMBIO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_TIPO_CAMBIOID</autoIncrementTriggerName>
+</Column>
+<Column name="ID_MONEDA_ORIGEN" id="8F4149FC-6CBA-EDB6-8ECE-C8F30E0CAF92">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>5070DC51-1B2C-CF8E-E1B7-CDBA1B6F76AA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E9EF2ED-88D4-6B47-E1C3-E8968F491AA7" referredColumn="9C6EFA45-C549-CCA5-5EBB-246F453CC12A"/>
+</associations>
+</Column>
+<Column name="DSC_MONEDA_ORIGEN" id="0D3BC4A0-8F8C-0758-280F-B8756F75621C">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>BD740A44-3388-8780-E325-CCF49866E92A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>EF216DAE-7343-7563-AFC6-297A960EFD47</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MONEDA_DESTINO" id="484D02FF-B2BB-D6AE-BEB1-DF4C091A218B">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>55886020-B92E-CF20-0E29-7424C0B7CE92</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A35FCDAE-E463-64ED-1370-D15C89D63893" referredColumn="9C6EFA45-C549-CCA5-5EBB-246F453CC12A"/>
+</associations>
+</Column>
+<Column name="DSC_MONEDA_DESTINO" id="137AD52D-CCD0-2C2C-AAAB-1B1147AB3155">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>16EB2108-1E37-E443-5ACC-7F8B95B9F59C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>EF216DAE-7343-7563-AFC6-297A960EFD47</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_TIPO_CAMBIO" id="BEA573EF-2E2B-0A3B-7CD8-8E39E3EE8B62">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>8D74EE1D-3807-2803-B868-360ECA1482D3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9942B83E-1FE3-0A60-8C70-CF28BF0F3C85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_TIPO_CAMBIO" id="5610CCEC-DEFA-BB7A-AC62-3340B89A1AD4">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>E8A6B8C2-EA52-B2BC-EAE3-CF074FF8B444</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>EF216DAE-7343-7563-AFC6-297A960EFD47</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2ED0C22B-0E70-41BB-AF61-E70B9C2F14C6" name="TIPO_CAMBIO_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>21957673-5ED8-54C6-0672-22D02EE384E1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA8E316C-4A2F-B1A3-478B-E9282F7E7562"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3248D261-05EA-D443-4177-2628413EB72C" name="TIPOCAMBIO_MONEDADESTINO_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="484D02FF-B2BB-D6AE-BEB1-DF4C091A218B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BAED0DC-F18F-348A-109C-768B56491E2A" name="TIPOCAMBIO_MONEDAORIGEN_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F4149FC-6CBA-EDB6-8ECE-C8F30E0CAF92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="C227CD35-13BF-FA7E-5FF6-414A7E0E5101" mainViewID="7A8F4DC2-6503-7F4E-2E83-3182BB665609">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 15:30:11 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

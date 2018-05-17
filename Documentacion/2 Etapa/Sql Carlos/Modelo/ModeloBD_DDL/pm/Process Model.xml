@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="86945F21-CBB7-D788-FEE7-F671E8B211E5">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 15:30:11 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0E9EF2ED-88D4-6B47-E1C3-E8968F491AA7" containerWithKeyObject="3F030D9E-CB12-2931-2CC3-8FFD19BC5EEB" localFKIndex="0BAED0DC-F18F-348A-109C-768B56491E2A" name="TIPOCAMBIO_MONEDAORIGEN_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>E8927D23-A6A0-092D-5410-486B321B3879</importedID>
+<referredTableLongName>MONEDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F38680C6-1467-8A3D-C049-B4A33BE5446A</referredTableID>
+<keyObject>D485300A-04FF-77A4-83AA-0CA93F2D5F61</keyObject>
+<referredKeyID>D485300A-04FF-77A4-83AA-0CA93F2D5F61</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_MONEDA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

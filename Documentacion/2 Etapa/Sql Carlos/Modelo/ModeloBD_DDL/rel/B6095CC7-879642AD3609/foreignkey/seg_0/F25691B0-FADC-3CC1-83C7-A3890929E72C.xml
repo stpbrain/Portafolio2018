@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F25691B0-FADC-3CC1-83C7-A3890929E72C" containerWithKeyObject="9D6CAE52-40B0-CA49-9079-186AD3260EEF" localFKIndex="927ED94E-36CE-59A4-254D-33C6654C5C4B" name="TIPOCAMBIOVALOR_TIPOCAMBIO_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>7E72EF57-C8B2-59C3-E1D3-EB3F66F272F3</importedID>
+<referredTableLongName>TIPO_CAMBIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3F030D9E-CB12-2931-2CC3-8FFD19BC5EEB</referredTableID>
+<keyObject>2ED0C22B-0E70-41BB-AF61-E70B9C2F14C6</keyObject>
+<referredKeyID>2ED0C22B-0E70-41BB-AF61-E70B9C2F14C6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_TIPO_CAMBIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
