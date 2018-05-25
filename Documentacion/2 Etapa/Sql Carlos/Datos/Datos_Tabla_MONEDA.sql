@@ -1,0 +1,8 @@
+/*
+Poblamiento de datos para tabla MONEDA
+Autor: Carlos Poblete Araya (a.k.a Kyosuke Kasuga)
+Fecha: 19-05-2018
+*/
+
+INSERT INTO MONEDA (DSC_MONEDA, COD_MONEDA) VALUES ('PESO CHILENO','CLP');
+INSERT INTO MONEDA (DSC_MONEDA, COD_MONEDA) VALUES ('DOLAR ESTADOUNIDENSE','USD');
