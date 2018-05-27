@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BC370414-FFB7-668D-5F0E-98FFF4A2F38B" name="TIPOCAMBIOVALOR_TIPOCAMBIO_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>7BA809DF-5892-57E2-A179-575415ECDCAD</importedID>
+<containerWithKeyObject>C9594489-47F4-A4EF-70EF-369E812B01DD</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>FE555D8E-BDA4-EC46-CDF5-0CB50DABF582</localFKIndex>
+<keyObject>7153671D-2287-CEE8-A58F-16469AA036E9</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

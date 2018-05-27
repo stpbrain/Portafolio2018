@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_EMPLEADOID" directorySegmentName="seg_0" id="3CE51D56-0CCD-60A5-1B73-EBB17551735B">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:42 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN&lt;br&gt;    :new.ID_EMPLEADO := SEC_EMPLEADO.nextval;&lt;br&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<condition>new.ID_EMPLEADO IS NULL</condition>
+<table>A250DCC3-61BC-353F-2C5C-8558B2DB263B</table>
+</TriggerOraclev10g>

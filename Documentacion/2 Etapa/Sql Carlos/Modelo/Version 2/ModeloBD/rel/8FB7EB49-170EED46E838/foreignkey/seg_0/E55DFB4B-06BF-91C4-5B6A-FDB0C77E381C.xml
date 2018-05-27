@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E55DFB4B-06BF-91C4-5B6A-FDB0C77E381C" name="HABITACION_STATUSHABIT_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>AE9CF997-9D84-55FA-43AF-4D3B1EB73B1E</importedID>
+<containerWithKeyObject>ABB9CED5-56E5-64E1-F1DC-08125EC4F825</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>932CF9A5-D971-AB26-DC23-A12C7FDD73EB</localFKIndex>
+<keyObject>C739DCBE-6BA6-DA6F-B7AD-43ECB72AD52C</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
