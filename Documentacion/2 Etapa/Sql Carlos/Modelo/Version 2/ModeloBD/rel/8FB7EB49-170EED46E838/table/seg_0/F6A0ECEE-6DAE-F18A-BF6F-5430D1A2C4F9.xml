@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6A0ECEE-6DAE-F18A-BF6F-5430D1A2C4F9" name="MINUTA">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>A7ACB927-A767-AADC-8CA9-6190DE03A6A8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PLATO" id="C1E7F081-CAB5-39BA-5A17-E35D9EF8E8F5">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>2DF1092D-4A0A-C7C2-200F-3CA550E09BB8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>CE8C0D16-0623-B0A5-A1F7-28FE39541051</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9BF03F3F-D854-D789-CD2E-7F1726187DCB" referredColumn="CE8C0D16-0623-B0A5-A1F7-28FE39541051"/>
+</associations>
+</Column>
+<Column name="ID_SERVICIO_COMEDOR" id="DAF270B9-FB78-466D-9E9F-843E8167926B">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>0C417C64-242C-2FC1-5FD1-D8AE468A919A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>1753E9AA-C5ED-0388-8BF5-DB0851653D63</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CC78186-D12A-B800-B605-5EB57E6B14F0" referredColumn="1753E9AA-C5ED-0388-8BF5-DB0851653D63"/>
+</associations>
+</Column>
+<Column name="ID_DIA_SEMANA" id="1E47B15A-D649-7E63-4773-8041A2A9EFC0">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>297AA7AF-B133-B9ED-27D2-07680537580B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>7DD418CE-4562-1E9D-DC40-24FDC264D10E</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="045723CD-5C5B-B1B3-E038-0628C8A235C4" referredColumn="7DD418CE-4562-1E9D-DC40-24FDC264D10E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F45A6A5E-3F0B-04BB-6E04-52405C3FDD9D" name="MINUTA_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>07336D12-4050-3482-F5D9-1ABDAD5D82DA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1E7F081-CAB5-39BA-5A17-E35D9EF8E8F5"/>
+<colUsage columnID="DAF270B9-FB78-466D-9E9F-843E8167926B"/>
+<colUsage columnID="1E47B15A-D649-7E63-4773-8041A2A9EFC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67915E5D-0E17-7B84-8B28-1EBA8014EC3C" name="MINUTA_DIASEMANA_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E47B15A-D649-7E63-4773-8041A2A9EFC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01CFCCD9-B9C4-3E72-9480-F783B1256138" name="MINUTA_PLATO_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1E7F081-CAB5-39BA-5A17-E35D9EF8E8F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B94CC815-C56F-9283-C9D9-6AE2CC946733" name="MINUTA_SERVICIOCOMEDOR_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAF270B9-FB78-466D-9E9F-843E8167926B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
