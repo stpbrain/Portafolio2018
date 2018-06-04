@@ -5,12 +5,13 @@
  */
 package gui;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
 import dal.Conexion;
 import bll.empleadoBLL;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author christianlopez
@@ -23,6 +24,9 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         txUsuario.requestFocus();
+         RestrictedTextField r = new RestrictedTextField(txUsuario);
+         r.setLimit(9);
+         r.setOnlyNums(true);
     }
 
     /**
@@ -56,6 +60,16 @@ public class Login extends javax.swing.JFrame {
         lbTitulo1.setText("<html>\n<p style=\"font-size:20px;text-align:center\">Hostería</p>\n<p style=\"font-size:30px;text-align:center\">Doña Clarita</p>\n</html>");
 
         txUsuario.setToolTipText("");
+        txUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txUsuarioActionPerformed(evt);
+            }
+        });
+        txUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txUsuarioKeyTyped(evt);
+            }
+        });
 
         jLabel1.setText("Usuario");
 
@@ -115,7 +129,7 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
                 .addComponent(btnIngresar)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
@@ -132,17 +146,34 @@ public class Login extends javax.swing.JFrame {
             if(emp.validarUsuario(txUsuario.getText(), txPass.getText()))
             {
                 Principal principal = new Principal();
+                emp.traeNombre(txUsuario.getText());
                 principal.setBounds(400, 200, 520, 350);
+                principal.JLuser.setText(emp.traeNombre(txUsuario.getText()));
                 principal.setVisible(true);
                 this.dispose();
                 
             }
         } catch (SQLException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null,"Favor validar ususario/ contraseña");
         }
         
         
     }//GEN-LAST:event_btnIngresarActionPerformed
+
+    private void txUsuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txUsuarioKeyTyped
+ int max= 8;
+ if(txUsuario.getText().length()>max)
+ {
+      JOptionPane.showMessageDialog(rootPane,"Maximo 9 caracteres para el rut sin guion");
+ }
+ 
+        
+    }//GEN-LAST:event_txUsuarioKeyTyped
+
+    private void txUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txUsuarioActionPerformed
 
     /**
      * @param args the command line arguments

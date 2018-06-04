@@ -29,11 +29,6 @@ public class HabitacionesBLL {
             PreparedStatement consulta = conn.prepareStatement(query);
             
             ResultSet resultado = consulta.executeQuery();
-            
-              
-            
-        
-        
         return resultado;
      }
 }

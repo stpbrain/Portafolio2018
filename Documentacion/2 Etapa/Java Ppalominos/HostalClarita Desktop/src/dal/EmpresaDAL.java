@@ -10,14 +10,14 @@ package dal;
  * @author papalominos
  */
 public class EmpresaDAL {
-    int id_empresa;
+   // int id_empresa;
   String nombre,rut,contrasena,direccion,telefono,email; 
 
     public EmpresaDAL() {
     }
 
-    public EmpresaDAL(int id_empresa, String nombre, String rut, String contrasena, String direccion, String telefono, String email) {
-        this.id_empresa = id_empresa;
+    public EmpresaDAL(String nombre, String rut, String contrasena, String direccion, String telefono, String email) {
+       // this.id_empresa = id_empresa;
         this.nombre = nombre;
         this.rut = rut;
         this.contrasena = contrasena;
@@ -26,14 +26,14 @@ public class EmpresaDAL {
         this.email = email;
     }
 
-    public int getId_empresa() {
+  /*  public int getId_empresa() {
         return id_empresa;
     }
 
     public void setId_empresa(int id_empresa) {
         this.id_empresa = id_empresa;
     }
-
+*/
     public String getNombre() {
         return nombre;
     }

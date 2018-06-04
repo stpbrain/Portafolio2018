@@ -23,7 +23,7 @@ public class empleadoBLL {
         Conexion conexion = Conexion.getInstance();
         Connection conn = conexion.getConnection();
         
-        String query = "select * from empleado where rut_empleado = "+usuario+" and pass_empleado="+pass+"  ";
+        String query = "select * from empleado where rut_empleado = "+usuario+" and pass_empleado='"+pass+"'  ";
         System.out.println(query);
         
         PreparedStatement consulta = conn.prepareStatement(query);
@@ -38,5 +38,29 @@ public class empleadoBLL {
         return resultado;
 
     }
+  public String traeNombre(String rut) throws SQLException
+  {
+     String res="";
+     Conexion conexion = Conexion.getInstance();
+        Connection conn = conexion.getConnection();
+        
+        String query = "select nombre, apellido from empleado where rut_empleado = "+rut+" ";
+        System.out.println(query);
+        
+        PreparedStatement consulta = conn.prepareStatement(query);
+        ResultSet rs = consulta.executeQuery();
+   
+        while(rs.next())
+        {
+            System.out.println(rs.getString("nombre")+" "+rs.getString("apellido"));
+            res = rs.getString("nombre")+" "+rs.getString("apellido");
+            
+            
+            
+        }
+     
+     
+     return res;
+  }
     
 }

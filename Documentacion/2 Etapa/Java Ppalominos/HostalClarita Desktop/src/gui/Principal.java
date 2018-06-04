@@ -5,6 +5,11 @@
  */
 package gui;
 
+import gui.clientes.CantUserReg;
+import gui.clientes.RegNuevEmp;
+import gui.clientes.RegNuevHuesp;
+import gui.clientes.RegNvoProveedor;
+import gui.clientes.RegiNuevHab;
 import gui.clientes.Registro;
 import gui.clientes.RegistroHab;
 import gui.clientes.ServicioComedor;
@@ -14,7 +19,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author christianlopez
+ * @author papalominos
  */
 public class Principal extends javax.swing.JFrame {
 
@@ -38,11 +43,12 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jFrame1 = new javax.swing.JFrame();
+        jLabel1 = new javax.swing.JLabel();
+        JLuser = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         regCliente = new javax.swing.JMenuItem();
-        regHabitacion = new javax.swing.JMenuItem();
-        regComedor = new javax.swing.JMenuItem();
+        regNvaHabitacion = new javax.swing.JMenuItem();
         regHuesped = new javax.swing.JMenuItem();
         regProveedor = new javax.swing.JMenuItem();
         regEmpleado = new javax.swing.JMenuItem();
@@ -56,11 +62,13 @@ public class Principal extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
+        JMempCreadas = new javax.swing.JMenuItem();
+        JMhabCreadas = new javax.swing.JMenuItem();
+        JMRegistroComidorFull = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -76,9 +84,14 @@ public class Principal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel1.setText("Bienvenido ");
+
+        JLuser.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+
         jMenu1.setText("Registro");
 
-        regCliente.setText("Registro Empresas");
+        regCliente.setText("Registro Nueva Empresas");
         regCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 regClienteActionPerformed(evt);
@@ -86,28 +99,28 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(regCliente);
 
-        regHabitacion.setText("Registro Habitacion");
-        regHabitacion.addActionListener(new java.awt.event.ActionListener() {
+        regNvaHabitacion.setText("Registro Nueva Habitacion");
+        regNvaHabitacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regHabitacionActionPerformed(evt);
+                regNvaHabitacionActionPerformed(evt);
             }
         });
-        jMenu1.add(regHabitacion);
-
-        regComedor.setText("Registro Comedor");
-        regComedor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regComedorActionPerformed(evt);
-            }
-        });
-        jMenu1.add(regComedor);
+        jMenu1.add(regNvaHabitacion);
 
         regHuesped.setText("Rergistro Huesped");
-        regHuesped.setEnabled(false);
+        regHuesped.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regHuespedActionPerformed(evt);
+            }
+        });
         jMenu1.add(regHuesped);
 
         regProveedor.setText("Rergistro Proveedor");
-        regProveedor.setEnabled(false);
+        regProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regProveedorActionPerformed(evt);
+            }
+        });
         jMenu1.add(regProveedor);
 
         regEmpleado.setText("Registro Factura");
@@ -149,7 +162,6 @@ public class Principal extends javax.swing.JFrame {
         jMenu2.add(jMenuItem1);
 
         jMenuItem2.setText("Cantidad de Usuarios Registrados ");
-        jMenuItem2.setEnabled(false);
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -174,6 +186,30 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem5);
 
+        JMempCreadas.setText("Registro Empresas Creadas");
+        JMempCreadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMempCreadasActionPerformed(evt);
+            }
+        });
+        jMenu2.add(JMempCreadas);
+
+        JMhabCreadas.setText("Registro Habitaciones Creadas");
+        JMhabCreadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMhabCreadasActionPerformed(evt);
+            }
+        });
+        jMenu2.add(JMhabCreadas);
+
+        JMRegistroComidorFull.setText("Registro Servicio Comedor");
+        JMRegistroComidorFull.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMRegistroComidorFullActionPerformed(evt);
+            }
+        });
+        jMenu2.add(JMRegistroComidorFull);
+
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Modulos");
@@ -192,61 +228,48 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setText("Salir");
-        jMenuBar1.add(jMenu4);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 516, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(141, 141, 141)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JLuser, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(73, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 359, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JLuser, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(244, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void regClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regClienteActionPerformed
-        // TODO add your handling code here:
-         Registro registro;
-        try {
-            registro = new Registro();
-            registro.setBounds(400, 200, 700, 400);
-            registro.setVisible(true);
-        this.dispose();
-        } catch (SQLException ex) {
-            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-        }
+    RegNuevEmp rne;
+    rne = new RegNuevEmp();
+    rne.setBounds(400, 200, 700, 400);
+       rne.setVisible(true);
+       this.dispose();
+      
     }//GEN-LAST:event_regClienteActionPerformed
 
-    private void regHabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regHabitacionActionPerformed
-           RegistroHab registroHab;
-        try {
-            registroHab = new RegistroHab();
-             registroHab.setBounds(400, 200, 700, 400);
-            registroHab.setVisible(true);
-        this.dispose();
-        } catch (SQLException ex) {
-            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_regHabitacionActionPerformed
-
-    private void regComedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regComedorActionPerformed
-       ServicioComedor servicioComedor;
-        try {
-            servicioComedor = new ServicioComedor();
-            servicioComedor.setBounds(400, 200, 700, 400);
-            servicioComedor.setVisible(true);
-             this.dispose();
-        } catch (Exception ex) {
-             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_regComedorActionPerformed
+    private void regNvaHabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regNvaHabitacionActionPerformed
+       RegiNuevHab rnh;
+       rnh = new RegiNuevHab();
+       rnh.setBounds(400, 200, 700, 400);
+       rnh.setVisible(true);
+       this.dispose();           
+    }//GEN-LAST:event_regNvaHabitacionActionPerformed
 
     private void regOrdenPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regOrdenPedidoActionPerformed
         // TODO add your handling code here:
@@ -257,12 +280,72 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
+        CantUserReg r;
+        r = new CantUserReg();
+        r.setBounds(400, 200, 700, 400);
+        r.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void JMempCreadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMempCreadasActionPerformed
+           Registro registro;
+        try {
+            registro = new Registro();
+            registro.setBounds(400, 200, 700, 400);
+            registro.setVisible(true);
+        this.dispose();
+        } catch (SQLException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JMempCreadasActionPerformed
+
+    private void JMhabCreadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMhabCreadasActionPerformed
+             RegistroHab registroHab;
+        try {
+            registroHab = new RegistroHab();
+             registroHab.setBounds(400, 200, 700, 400);
+            registroHab.setVisible(true);
+        this.dispose();
+        } catch (SQLException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JMhabCreadasActionPerformed
+
+    private void regHuespedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regHuespedActionPerformed
+        RegNuevHuesp registrohuesp;
+        registrohuesp = new RegNuevHuesp();
+        registrohuesp.setBounds(400, 200, 700, 400);
+        registrohuesp.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_regHuespedActionPerformed
+
+    private void JMRegistroComidorFullActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMRegistroComidorFullActionPerformed
+         ServicioComedor servicioComedor;
+        try {
+            servicioComedor = new ServicioComedor();
+            servicioComedor.setBounds(400, 200, 700, 400);
+            servicioComedor.setVisible(true);
+             this.dispose();
+        } catch (Exception ex) {
+             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JMRegistroComidorFullActionPerformed
+
+    private void regProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regProveedorActionPerformed
+        RegNvoProveedor regNvoProveedor;
+        try {
+            regNvoProveedor = new RegNvoProveedor();
+            regNvoProveedor.setBounds(400, 200, 700, 400);
+            regNvoProveedor.setVisible(true);
+             this.dispose();
+        } catch (Exception ex) {
+             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_regProveedorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -300,11 +383,15 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JLabel JLuser;
+    private javax.swing.JMenuItem JMRegistroComidorFull;
+    private javax.swing.JMenuItem JMempCreadas;
+    private javax.swing.JMenuItem JMhabCreadas;
     private javax.swing.JFrame jFrame1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
@@ -317,10 +404,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenuItem regCliente;
-    private javax.swing.JMenuItem regComedor;
     private javax.swing.JMenuItem regEmpleado;
-    private javax.swing.JMenuItem regHabitacion;
     private javax.swing.JMenuItem regHuesped;
+    private javax.swing.JMenuItem regNvaHabitacion;
     private javax.swing.JMenuItem regOrdenPedido;
     private javax.swing.JMenuItem regProveedor;
     private javax.swing.JMenuItem regRecepcion;
