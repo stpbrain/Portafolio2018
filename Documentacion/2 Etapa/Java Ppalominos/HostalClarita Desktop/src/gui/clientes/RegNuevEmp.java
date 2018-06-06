@@ -179,7 +179,7 @@ public class RegNuevEmp extends javax.swing.JFrame {
             String t= tfTelefono.getText();
             String m=tfMail.getText();
         try {
-            System.out.println(nemp.crearEmpresa(n,r, p,d,t,m));
+            
             if(nemp.crearEmpresa(n,r, p,d,t,m))
               {
                   JOptionPane.showMessageDialog(null,"Empresa Registrada OK");

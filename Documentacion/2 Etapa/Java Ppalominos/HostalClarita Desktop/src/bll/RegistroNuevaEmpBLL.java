@@ -32,7 +32,7 @@ public boolean crearEmpresa( String nombre,String rut,String contrasena,String d
             ps.setString(4, direccion);
             ps.setString(5, telefono);
             ps.setString(6, email);
-            System.out.println(ps.executeUpdate());
+            ps.executeUpdate();
             if(ps.executeUpdate() ==1)
             {
                 estado = true;
