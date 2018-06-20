@@ -27,6 +27,8 @@ public class Login extends javax.swing.JFrame {
          RestrictedTextField r = new RestrictedTextField(txUsuario);
          r.setLimit(9);
          r.setOnlyNums(true);
+         
+                 
     }
 
     /**
