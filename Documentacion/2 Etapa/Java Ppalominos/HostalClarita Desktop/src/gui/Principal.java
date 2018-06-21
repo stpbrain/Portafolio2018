@@ -14,6 +14,8 @@ import gui.clientes.RegiNuevHab;
 import gui.clientes.Registro;
 import gui.clientes.RegistroHab;
 import gui.clientes.ServicioComedor;
+import gui.reserva.ListadoReservas;
+import gui.reserva.IngresoReservas; 
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,13 +27,18 @@ import java.util.logging.Logger;
 public class Principal extends javax.swing.JFrame {
 
     
-
+    private String NombreUsuario;
+    
     /**
      * Creates new form Principal
      */
     public Principal() {
         initComponents();
-
+    }
+    
+    public Principal(String _nombreusuario) {
+        initComponents();
+        JLuser.setText(_nombreusuario);
     }
 
     /**
@@ -60,7 +67,7 @@ public class Principal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        listReservas = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         JMempCreadas = new javax.swing.JMenuItem();
@@ -70,6 +77,9 @@ public class Principal extends javax.swing.JFrame {
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
+        menu_Reserva = new javax.swing.JMenu();
+        mitem_ListReservaEmpresa = new javax.swing.JMenuItem();
+        mitem_IngresoReserva = new javax.swing.JMenuItem();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -174,9 +184,14 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem2);
 
-        jMenuItem3.setText("Cantidad de Reservas");
-        jMenuItem3.setEnabled(false);
-        jMenu2.add(jMenuItem3);
+        listReservas.setText("Cantidad de Reservas");
+        listReservas.setEnabled(false);
+        listReservas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                listReservasActionPerformed(evt);
+            }
+        });
+        jMenu2.add(listReservas);
 
         jMenuItem4.setText("Cantidad de Huespedes Actual");
         jMenuItem4.setEnabled(false);
@@ -233,6 +248,26 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
+        menu_Reserva.setText("Reservas");
+
+        mitem_ListReservaEmpresa.setText("Listado Reservas por Empresa");
+        mitem_ListReservaEmpresa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mitem_ListReservaEmpresaActionPerformed(evt);
+            }
+        });
+        menu_Reserva.add(mitem_ListReservaEmpresa);
+
+        mitem_IngresoReserva.setText("Ingreso Reserva");
+        mitem_IngresoReserva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mitem_IngresoReservaActionPerformed(evt);
+            }
+        });
+        menu_Reserva.add(mitem_IngresoReserva);
+
+        jMenuBar1.add(menu_Reserva);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -259,6 +294,14 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public String getNombreUsuario() {
+        return this.NombreUsuario;
+    }
+    
+    public void setNombreUsuario(String _nombreusuario) {
+        this.NombreUsuario = _nombreusuario;
+    }
+    
     private void regClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regClienteActionPerformed
     RegNuevEmp rne;
     rne = new RegNuevEmp();
@@ -352,12 +395,42 @@ public class Principal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_regProveedorActionPerformed
 
+
     private void regProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regProductoActionPerformed
         RegNuevoProd nprod;
         nprod = new RegNuevoProd();
             nprod.setBounds(400, 200, 700, 400);
             nprod.setVisible(true);
     }//GEN-LAST:event_regProductoActionPerformed
+
+    private void listReservasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listReservasActionPerformed
+        
+    }//GEN-LAST:event_listReservasActionPerformed
+
+    private void mitem_ListReservaEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitem_ListReservaEmpresaActionPerformed
+        ListadoReservas listreserva;
+        try {
+            listreserva = new ListadoReservas();
+            listreserva.setBounds(400, 200, 700, 400);
+            listreserva.setVisible(true);
+             this.dispose();
+        } catch (Exception ex) {
+             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_mitem_ListReservaEmpresaActionPerformed
+
+    private void mitem_IngresoReservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitem_IngresoReservaActionPerformed
+        IngresoReservas newreserva;
+        try {
+            newreserva = new IngresoReservas();
+            newreserva.setBounds(400, 200, 700, 400);
+            newreserva.setVisible(true);
+             this.dispose();
+        } catch (Exception ex) {
+             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_mitem_IngresoReservaActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -408,13 +481,16 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenuItem listReservas;
+    private javax.swing.JMenu menu_Reserva;
+    private javax.swing.JMenuItem mitem_IngresoReserva;
+    private javax.swing.JMenuItem mitem_ListReservaEmpresa;
     private javax.swing.JMenuItem regCliente;
     private javax.swing.JMenuItem regHuesped;
     private javax.swing.JMenuItem regNvaHabitacion;
