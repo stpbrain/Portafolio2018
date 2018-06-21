@@ -134,9 +134,9 @@ public class CantUserReg extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void JBvolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBvolverActionPerformed
-                Principal principal = new Principal();
+               /* Principal principal = new Principal();
                 principal.setBounds(400, 200, 520, 350);
-                principal.setVisible(true);
+                principal.setVisible(true);*/
                 this.dispose(); 
     }//GEN-LAST:event_JBvolverActionPerformed
 

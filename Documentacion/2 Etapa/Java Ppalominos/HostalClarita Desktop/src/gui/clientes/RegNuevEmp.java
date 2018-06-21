@@ -198,9 +198,9 @@ public class RegNuevEmp extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         Principal principal = new Principal();
+        /* Principal principal = new Principal();
                 principal.setBounds(400, 200, 520, 350);
-                principal.setVisible(true);
+                principal.setVisible(true);*/
                 this.dispose(); 
     }//GEN-LAST:event_jButton1ActionPerformed
 

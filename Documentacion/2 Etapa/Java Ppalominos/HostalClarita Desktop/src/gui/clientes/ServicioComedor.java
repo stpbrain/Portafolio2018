@@ -128,9 +128,9 @@ public class ServicioComedor extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-         Principal principal = new Principal();
+/*         Principal principal = new Principal();
                 principal.setBounds(400, 200, 520, 350);
-                principal.setVisible(true);
+                principal.setVisible(true);*/
                 this.dispose(); 
     }//GEN-LAST:event_btnVolverActionPerformed
 

@@ -235,9 +235,9 @@ public class RegNvoProveedor extends javax.swing.JFrame {
     }//GEN-LAST:event_JBRegistrarActionPerformed
 
     private void JBvolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBvolverActionPerformed
-        Principal principal = new Principal();
+/*        Principal principal = new Principal();
                 principal.setBounds(400, 200, 520, 350);
-                principal.setVisible(true);
+                principal.setVisible(true);*/
                 this.dispose(); 
     }//GEN-LAST:event_JBvolverActionPerformed
 

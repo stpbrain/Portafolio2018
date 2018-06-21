@@ -182,9 +182,9 @@ public class RegiNuevHab extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-                Principal principal = new Principal();
+              /*  Principal principal = new Principal();
                 principal.setBounds(400, 200, 520, 350);
-                principal.setVisible(true);
+                principal.setVisible(true);*/
                 this.dispose(); 
     }//GEN-LAST:event_jButton2ActionPerformed
 

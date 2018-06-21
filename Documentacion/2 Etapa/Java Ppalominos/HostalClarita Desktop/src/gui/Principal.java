@@ -8,6 +8,7 @@ package gui;
 import gui.clientes.CantUserReg;
 import gui.clientes.RegNuevEmp;
 import gui.clientes.RegNuevHuesp;
+import gui.clientes.RegNuevoProd;
 import gui.clientes.RegNvoProveedor;
 import gui.clientes.RegiNuevHab;
 import gui.clientes.Registro;
@@ -51,7 +52,7 @@ public class Principal extends javax.swing.JFrame {
         regNvaHabitacion = new javax.swing.JMenuItem();
         regHuesped = new javax.swing.JMenuItem();
         regProveedor = new javax.swing.JMenuItem();
-        regEmpleado = new javax.swing.JMenuItem();
+        regProducto = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
         regOrdenPedido = new javax.swing.JMenuItem();
@@ -123,9 +124,13 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(regProveedor);
 
-        regEmpleado.setText("Registro Factura");
-        regEmpleado.setEnabled(false);
-        jMenu1.add(regEmpleado);
+        regProducto.setText("Registro Producto");
+        regProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regProductoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(regProducto);
 
         jMenuItem7.setText("Registro Orden de Compra");
         jMenuItem7.setEnabled(false);
@@ -259,7 +264,7 @@ public class Principal extends javax.swing.JFrame {
     rne = new RegNuevEmp();
     rne.setBounds(400, 200, 700, 400);
        rne.setVisible(true);
-       this.dispose();
+      // this.dispose();
       
     }//GEN-LAST:event_regClienteActionPerformed
 
@@ -268,7 +273,7 @@ public class Principal extends javax.swing.JFrame {
        rnh = new RegiNuevHab();
        rnh.setBounds(400, 200, 700, 400);
        rnh.setVisible(true);
-       this.dispose();           
+       //this.dispose();           
     }//GEN-LAST:event_regNvaHabitacionActionPerformed
 
     private void regOrdenPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regOrdenPedidoActionPerformed
@@ -284,7 +289,7 @@ public class Principal extends javax.swing.JFrame {
         r = new CantUserReg();
         r.setBounds(400, 200, 700, 400);
         r.setVisible(true);
-        this.dispose();
+      // this.dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
@@ -320,7 +325,7 @@ public class Principal extends javax.swing.JFrame {
         registrohuesp = new RegNuevHuesp();
         registrohuesp.setBounds(400, 200, 700, 400);
         registrohuesp.setVisible(true);
-        this.dispose();
+        //this.dispose();
     }//GEN-LAST:event_regHuespedActionPerformed
 
     private void JMRegistroComidorFullActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMRegistroComidorFullActionPerformed
@@ -341,11 +346,18 @@ public class Principal extends javax.swing.JFrame {
             regNvoProveedor = new RegNvoProveedor();
             regNvoProveedor.setBounds(400, 200, 700, 400);
             regNvoProveedor.setVisible(true);
-             this.dispose();
+            // this.dispose();
         } catch (Exception ex) {
              Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_regProveedorActionPerformed
+
+    private void regProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regProductoActionPerformed
+        RegNuevoProd nprod;
+        nprod = new RegNuevoProd();
+            nprod.setBounds(400, 200, 700, 400);
+            nprod.setVisible(true);
+    }//GEN-LAST:event_regProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -404,10 +416,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenuItem regCliente;
-    private javax.swing.JMenuItem regEmpleado;
     private javax.swing.JMenuItem regHuesped;
     private javax.swing.JMenuItem regNvaHabitacion;
     private javax.swing.JMenuItem regOrdenPedido;
+    private javax.swing.JMenuItem regProducto;
     private javax.swing.JMenuItem regProveedor;
     private javax.swing.JMenuItem regRecepcion;
     // End of variables declaration//GEN-END:variables

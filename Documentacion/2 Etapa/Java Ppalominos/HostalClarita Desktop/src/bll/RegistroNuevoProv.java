@@ -36,8 +36,9 @@ public class RegistroNuevoProv {
             ps.setString(6, nCont);
             ps.setString(7, Telc);
             ps.setString(8, MailC);
-            System.out.println(ps.executeUpdate());
-            if(ps.executeUpdate() ==1)
+            //modificacion el 20/6 , falta validar si funciona !!!
+           int r = ps.executeUpdate();
+            if(r ==1)
             {
                 estado = true;
             }
