@@ -6,11 +6,13 @@
 package gui.clientes;
 
 
+import Atxy2k.CustomTextField.RestrictedTextField;
 import bll.RegistroNuevoProd;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -23,6 +25,23 @@ public class RegNuevoProd extends javax.swing.JFrame {
      */
     public RegNuevoProd() {
         initComponents();
+        RestrictedTextField r = new RestrictedTextField(jtFechaVenc1);
+        RestrictedTextField r2 = new RestrictedTextField(jtPrec);
+        RestrictedTextField r3 = new RestrictedTextField(jtNombreProd);
+        RestrictedTextField r4 = new RestrictedTextField(jtstockCritico);
+        RestrictedTextField r5 = new RestrictedTextField(jtstockIni);
+        r.setLimit(10);
+        r2.setOnlyNums(true);
+        r2.setLimit(5);
+        r3.setOnlyText(true);
+        r3.setAcceptSpace(true);
+        r4.setLimit(5);
+        r4.setOnlyNums(true);
+        r5.setLimit(5);
+        r5.setOnlyNums(true);
+        
+        
+        
          cbFamilia.removeAllItems();
         cbProv.removeAllItems();
         ArrayList<String> lista = new ArrayList<String>();
@@ -69,8 +88,12 @@ public class RegNuevoProd extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jtNombreProd = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jtCodProd = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel1.setText("Registra Nuevo Producto");
@@ -112,6 +135,22 @@ public class RegNuevoProd extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setText("Crear Prod");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Volver");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Codigo de Producto");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -122,6 +161,11 @@ public class RegNuevoProd extends javax.swing.JFrame {
                         .addGap(101, 101, 101)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addComponent(jButton2)
+                        .addGap(46, 46, 46)
+                        .addComponent(jButton3))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -130,7 +174,9 @@ public class RegNuevoProd extends javax.swing.JFrame {
                             .addComponent(jLabel5)
                             .addComponent(jLabel6)
                             .addComponent(jLabel7)
-                            .addComponent(jLabel8))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel9)
+                                .addComponent(jLabel8)))
                         .addGap(35, 35, 35)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(cbProv, 0, 102, Short.MAX_VALUE)
@@ -139,7 +185,8 @@ public class RegNuevoProd extends javax.swing.JFrame {
                             .addComponent(jtFechaVenc1)
                             .addComponent(jtstockIni)
                             .addComponent(jtstockCritico)
-                            .addComponent(jtNombreProd))
+                            .addComponent(jtNombreProd)
+                            .addComponent(jtCodProd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)))
                 .addContainerGap(31, Short.MAX_VALUE))
@@ -179,7 +226,15 @@ public class RegNuevoProd extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jtNombreProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jtCodProd, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
@@ -195,6 +250,33 @@ public class RegNuevoProd extends javax.swing.JFrame {
                 cf.setVisible(true);
                 this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        RegistroNuevoProd np = new RegistroNuevoProd();
+        
+        try {
+            int r;
+     r= np.nuevoProducto(np.traeIdProv(cbProv.getSelectedItem().toString()),np.traeIdFamilia(cbFamilia.getSelectedItem().toString()), jtFechaVenc1.getText(), jtNombreProd.getText(), Integer.parseInt(jtPrec.getText()), Integer.parseInt(jtstockIni.getText()), Integer.parseInt(jtstockCritico.getText()));
+     if(r==0)
+     {
+         JOptionPane.showMessageDialog(null, "el formato de la fecha es dd/mm/yyyy");
+     }
+     jtCodProd.setText(np.traeCod(jtNombreProd.getText(), jtFechaVenc1.getText())+"");
+      JOptionPane.showMessageDialog(null, "Codigo de producto es "+np.traeCod(jtNombreProd.getText(), jtFechaVenc1.getText()));
+      
+        } catch (SQLException ex) {
+            Logger.getLogger(RegNuevoProd.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("la wea muriuo llll");
+        }
+        
+        
+        
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -235,6 +317,8 @@ public class RegNuevoProd extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbFamilia;
     private javax.swing.JComboBox<String> cbProv;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -243,6 +327,8 @@ public class RegNuevoProd extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jtCodProd;
     private javax.swing.JTextField jtFechaVenc1;
     private javax.swing.JTextField jtNombreProd;
     private javax.swing.JTextField jtPrec;

@@ -126,7 +126,7 @@ public class RegistroNuevaHabitacion {
             ps.setString(2, null);
             ps.setInt(3, tip);
             ps.setInt(4, est);
-            System.out.println(ps.executeUpdate());
+            ps.executeUpdate();
             if(ps.executeUpdate() ==1)
             {
                 estado = true;

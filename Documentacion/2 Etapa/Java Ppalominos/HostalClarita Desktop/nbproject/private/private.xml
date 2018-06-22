@@ -4,19 +4,26 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/HabitacionesBLL.java</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegNuevEmp.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegNvoProveedor.java</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/RegistroNuevaEmpBLL.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/dal/EmpresaDAL.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegiNuevHab.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/Registro.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/EmpresaBLL.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/ClienteBLL.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/RegistroNuevoProd.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/RegistroNuevaHabitacion.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/Login.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegNuevoProd.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegNuevEmp.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/RegistroNuevaEmpBLL.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/imagenes/nuevaEmpresa.png</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegNuevHuesp.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/imagenes/logo.png</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegiNuevHab.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/CantUserReg.java</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/Registro.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/dal/EmpleadoDAL.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/ServicioComedorBLL.java</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/EmpresaBLL.java</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/ClienteBLL.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/dal/ClientesDAL.java</file>
+            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/CreaFamilia.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/RegistroNuevoProv.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/RegistroHab.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/RegistroNuevoHuespedBLL.java</file>
@@ -24,9 +31,7 @@
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/dal/HabitacionDAL.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/InformesCantidades.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/clientes/ServicioComedor.java</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/bll/RegistroNuevaHabitacion.java</file>
             <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/Principal.java</file>
-            <file>file:/C:/Users/ext_papalominos/Documents/GitHub/Portafolio2018/Documentacion/2%20Etapa/Java%20Ppalominos/HostalClarita%20Desktop/src/gui/Login.java</file>
         </group>
     </open-files>
 </project-private>
