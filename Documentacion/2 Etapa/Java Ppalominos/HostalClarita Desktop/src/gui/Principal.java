@@ -65,7 +65,6 @@ public class Principal extends javax.swing.JFrame {
         regOrdenPedido = new javax.swing.JMenuItem();
         regRecepcion = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         listReservas = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -166,15 +165,6 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Informes");
-
-        jMenuItem1.setText("Visitas al Sitio Web");
-        jMenuItem1.setEnabled(false);
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuItem1);
 
         jMenuItem2.setText("Cantidad de Usuarios Registrados ");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -323,10 +313,6 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_regOrdenPedidoActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         CantUserReg r;
         r = new CantUserReg();
@@ -345,7 +331,6 @@ public class Principal extends javax.swing.JFrame {
             registro = new Registro();
             registro.setBounds(400, 200, 700, 400);
             registro.setVisible(true);
-        this.dispose();
         } catch (SQLException ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -357,7 +342,6 @@ public class Principal extends javax.swing.JFrame {
             registroHab = new RegistroHab();
              registroHab.setBounds(400, 200, 700, 400);
             registroHab.setVisible(true);
-        this.dispose();
         } catch (SQLException ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -377,7 +361,6 @@ public class Principal extends javax.swing.JFrame {
             servicioComedor = new ServicioComedor();
             servicioComedor.setBounds(400, 200, 700, 400);
             servicioComedor.setVisible(true);
-             this.dispose();
         } catch (Exception ex) {
              Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -478,7 +461,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem4;

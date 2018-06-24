@@ -195,14 +195,17 @@ public class RegistroNuevoProd {
      {
          int cod = 0;
          try {
-             ArrayList<String> llena = new ArrayList<String>();
              Conexion conexion = Conexion.getInstance();
              Connection conn = conexion.getConnection();
-             String query = ("select lpad(d.ID_PROVEEDOR,3,'0')||lpad(d.ID_TIPO_PRODUCTO,3,'0')||replace(d.FECHA_VENCIMIENTO,'/','')||lpad(pf.ID,3,'0') as cod from producto d join prod_final pf on(d.DSC_PRODUCTO=pf.DSC)  where d.DSC_PRODUCTO = '"+nomb+"' and d.FECHA_VENCIMIENTO = '"+fecha+"'");
-             ResultSet res =  conn.createStatement().executeQuery(query);
-             while(res.next())
+             String query = ("select ID_PROVEEDOR||ID_TIPO_PRODUCTO||replace(FECHA_VENCIMIENTO,'/','')||MAX(ID) as cod from producto d join prod_final pf on(d.DSC_PRODUCTO=pf.DSC)  where d.DSC_PRODUCTO = '"+nomb+"' and d.FECHA_VENCIMIENTO = '"+fecha+"' GROUP BY ID_PROVEEDOR||ID_TIPO_PRODUCTO||replace(FECHA_VENCIMIENTO,'/','')");
+                              
+             ResultSet res1 =  conn.createStatement().executeQuery(query);
+             
+            while(res1.next())
              {
-                 cod = res.getInt("cod");
+                 cod = res1.getInt("cod");
+                 System.out.println("soy el codigo-->"+cod );
+                 System.out.println(query);
              }
              return cod;
              

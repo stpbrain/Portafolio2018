@@ -21,7 +21,7 @@ public class HabitacionesBLL {
         
         Conexion conexion = Conexion.getInstance();
             Connection conn = conexion.getConnection();
-            String query ="select h.ID_HABITACION,h.PRECIO,h.DISPONIBILIDAD,th.DSC_TIPO_HABITACION,sh.DSC_STATUS_HABITACION \n" +
+            String query ="select h.ID_HABITACION,h.PRECIO,th.DSC_TIPO_HABITACION,sh.DSC_STATUS_HABITACION \n" +
                           "from habitacion h  \n" +
                           "join tipo_habitacion th on (h.ID_TIPO_HABITACION=th.ID_TIPO_HABITACION) \n" +
                           "join status_habitacion sh on(sh.ID_STATUS_HABITACION = h.ID_STATUS_HABITACION)" ;

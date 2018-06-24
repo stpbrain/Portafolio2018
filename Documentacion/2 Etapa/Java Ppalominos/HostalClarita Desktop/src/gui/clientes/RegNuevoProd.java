@@ -267,7 +267,8 @@ this.dispose();
      }
      jtCodProd.setText(np.traeCod(jtNombreProd.getText(), jtFechaVenc1.getText())+"");
       JOptionPane.showMessageDialog(null, "Codigo de producto es "+np.traeCod(jtNombreProd.getText(), jtFechaVenc1.getText()));
-      
+      jButton1.setEnabled(false);
+      jButton2.setEnabled(false);
         } catch (SQLException ex) {
             Logger.getLogger(RegNuevoProd.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("la wea muriuo llll");

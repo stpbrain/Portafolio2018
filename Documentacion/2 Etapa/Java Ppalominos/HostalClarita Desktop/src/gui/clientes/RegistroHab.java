@@ -5,12 +5,20 @@
  */
 package gui.clientes;
 
+import bll.ExportarExcel;
 import bll.HabitacionesBLL;
 import gui.Principal;
+import java.io.File;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -29,7 +37,7 @@ public class RegistroHab extends javax.swing.JFrame {
         DefaultTableModel tm = new DefaultTableModel();
         tm.addColumn("Numero Habitacion");
         tm.addColumn("Precio ");
-        tm.addColumn( " Disponibilidad" );
+       // tm.addColumn( " Disponibilidad" );
         tm.addColumn( "Tipo Habitacion");
         tm.addColumn( " Estado Habitacion");
         tbhab.setModel(tm);
@@ -40,9 +48,9 @@ public class RegistroHab extends javax.swing.JFrame {
         {
             datos[0] = habitacionesDisp.getString("ID_HABITACION");
             datos[1] = habitacionesDisp.getString("PRECIO");
-            datos[2] = habitacionesDisp.getString("DISPONIBILIDAD");
-            datos[3] = habitacionesDisp.getString("DSC_TIPO_HABITACION");
-            datos[4] = habitacionesDisp.getString("DSC_STATUS_HABITACION");
+          //  datos[2] = habitacionesDisp.getString("DISPONIBILIDAD");
+            datos[2] = habitacionesDisp.getString("DSC_TIPO_HABITACION");
+            datos[3] = habitacionesDisp.getString("DSC_STATUS_HABITACION");
             
             tm.addRow(datos);
         }
@@ -63,22 +71,23 @@ public class RegistroHab extends javax.swing.JFrame {
         tbhab = new javax.swing.JTable();
         btnVolver = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         tbhab.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Numero Habitacion", "Precio", "Disponibilidad", "Tipo Habitacion", "Estado Habitacion"
+                "Numero Habitacion", "Precio", "Tipo Habitacion", "Estado Habitacion"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -97,6 +106,13 @@ public class RegistroHab extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel1.setText("Habitaciones Disponibles");
 
+        jButton1.setText("Exportar a Excel");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -107,14 +123,17 @@ public class RegistroHab extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 652, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(300, 300, 300)
-                        .addComponent(btnVolver)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(220, 220, 220)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(237, 237, 237)
+                                .addComponent(btnVolver)
+                                .addGap(29, 29, 29)
+                                .addComponent(jButton1)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(220, 220, 220)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,7 +143,9 @@ public class RegistroHab extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnVolver))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnVolver)
+                    .addComponent(jButton1)))
         );
 
         pack();
@@ -136,6 +157,40 @@ public class RegistroHab extends javax.swing.JFrame {
                 principal.setVisible(true);*/
                 this.dispose();  
     }//GEN-LAST:event_btnVolverActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+          if (this.tbhab.getRowCount()==0) {
+            JOptionPane.showMessageDialog (null, "No hay datos en la tabla para exportar.","BCO",
+                JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+        JFileChooser chooser=new JFileChooser();
+        FileNameExtensionFilter filter=new FileNameExtensionFilter("Archivos de excel","xls");
+        chooser.setFileFilter(filter);
+        chooser.setDialogTitle("Guardar archivo");
+        chooser.setMultiSelectionEnabled(false);
+        chooser.setAcceptAllFileFilterUsed(false);
+        if (chooser.showSaveDialog(null)==JFileChooser.APPROVE_OPTION){
+            List<JTable> tb=new ArrayList<>();
+            List<String>nom=new ArrayList<>();
+            tb.add(tbhab);
+            nom.add("Detalle de Gastos");
+            String file=chooser.getSelectedFile().toString().concat(".xls");
+            try {
+                ExportarExcel e=new ExportarExcel(new File(file),tb, nom);
+                if (e.export()) {
+                    JOptionPane.showMessageDialog(null, "Los datos fueron exportados a excel.","BCO",
+                        JOptionPane.INFORMATION_MESSAGE);
+
+                }
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null,"Hubo un error"+ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
+            }
+        }
+
+    
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -178,6 +233,7 @@ public class RegistroHab extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVolver;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tbhab;
