@@ -119,13 +119,12 @@ public class RegistroNuevaHabitacion {
     Conexion conexion = Conexion.getInstance();
     Connection conn = conexion.getConnection();
     
-            PreparedStatement ps = conn.prepareStatement("insert into habitacion (precio,disponibilidad,id_tipo_habitacion,id_status_habitacion) values (?,?,?,?)");
+            PreparedStatement ps = conn.prepareStatement("insert into habitacion (precio,id_tipo_habitacion,id_status_habitacion) values (?,?,?)");
            
          //insert into habitacion (precio,disponibilidad,id_tipo_habitacion,id_status_habitacion) values (400,null,1,1)
             ps.setInt(1, val);
-            ps.setString(2, null);
-            ps.setInt(3, tip);
-            ps.setInt(4, est);
+            ps.setInt(2, tip);
+            ps.setInt(3, est);
             ps.executeUpdate();
             if(ps.executeUpdate() ==1)
             {
