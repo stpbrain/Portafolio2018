@@ -9,6 +9,7 @@ import Atxy2k.CustomTextField.RestrictedTextField;
 import bll.RegistroNuevoHuespedBLL;
 import gui.Principal;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -26,11 +27,30 @@ public class RegNuevHuesp extends javax.swing.JFrame {
         initComponents();
         
         RestrictedTextField r = new RestrictedTextField(JTrut);
-        r.setLimit(9);
-        r.setOnlyNums(true);
         RestrictedTextField r2 = new RestrictedTextField(JTfnac);
-        r2.setOnlyNums(true);
-        r2.setLimit(8);
+        RestrictedTextField r3 = new RestrictedTextField(JTnombre);
+        RestrictedTextField r4 = new RestrictedTextField(JTapp);
+        RestrictedTextField r5 = new RestrictedTextField(JTapm);
+         r.setLimit(9);
+        r2.setLimit(10);
+        r3.setOnlyText(true);
+        r3.setAcceptSpace(true);
+        r4.setOnlyText(true);
+        r4.setAcceptSpace(true);
+        r5.setOnlyText(true);
+        r5.setAcceptSpace(true);
+        
+        cbEmpresa.removeAllItems();
+        ArrayList<String> lista = new ArrayList<String>();
+        try {
+            lista = RegistroNuevoHuespedBLL.llenaEmpresa();
+            for(int i = 0; i<lista.size();i++){
+            cbEmpresa.addItem(lista.get(i));
+               
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(RegNuevHuesp.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
 
@@ -61,6 +81,8 @@ public class RegNuevHuesp extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         JTfnac = new javax.swing.JTextField();
         JCgenero = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        cbEmpresa = new javax.swing.JComboBox<>();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -144,6 +166,10 @@ public class RegNuevHuesp extends javax.swing.JFrame {
 
         JCgenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "M", "F", "P" }));
 
+        jLabel9.setText("Empresa Mandante");
+
+        cbEmpresa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -162,17 +188,18 @@ public class RegNuevHuesp extends javax.swing.JFrame {
                             .addComponent(jLabel7)
                             .addComponent(jLabel8)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel4))
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel9))
                         .addGap(24, 24, 24)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JTapp, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(JTrut)
-                                .addComponent(JTmail)
-                                .addComponent(JTnombre)
-                                .addComponent(JTfnac)
-                                .addComponent(JCgenero, 0, 112, Short.MAX_VALUE))
-                            .addComponent(JTapm, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(JTapp, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                            .addComponent(JTrut)
+                            .addComponent(JTmail)
+                            .addComponent(JTnombre)
+                            .addComponent(JTfnac)
+                            .addComponent(JCgenero, 0, 112, Short.MAX_VALUE)
+                            .addComponent(JTapm, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                            .addComponent(cbEmpresa, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(90, 90, 90)
                         .addComponent(JBregistrar)
@@ -213,11 +240,15 @@ public class RegNuevHuesp extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JCgenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBregistrar)
                     .addComponent(jButton2))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGap(19, 19, 19))
         );
 
         pack();
@@ -271,7 +302,7 @@ int max = 20;
         RegistroNuevoHuespedBLL rnh = new RegistroNuevoHuespedBLL();
         //String genero
         try {
-            rnh.CrearNuevoHuesped(JTnombre.getText(),JTapp.getText(),JTapm.getText(),JTrut.getText(),JTfnac.getText(),JTmail.getText(),JCgenero.getSelectedItem().toString());
+            rnh.CrearNuevoHuesped(JTnombre.getText(),JTapp.getText(),JTapm.getText(),JTrut.getText(),JTfnac.getText(),JTmail.getText(),JCgenero.getSelectedItem().toString(),rnh.obtieneIDemp(cbEmpresa.getSelectedItem().toString()));
             System.out.println("insercion correcta desde pantalla");
             JTnombre.setText("");
             JTapp.setText("");
@@ -341,6 +372,7 @@ int max = 20;
     private javax.swing.JTextField JTmail;
     private javax.swing.JTextField JTnombre;
     private javax.swing.JTextField JTrut;
+    private javax.swing.JComboBox<String> cbEmpresa;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
@@ -351,5 +383,6 @@ int max = 20;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
