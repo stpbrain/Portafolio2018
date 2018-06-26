@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41C9EB2A-238B-DE75-AA74-0C8CF55E8CD4" name="SERVICIO_COMEDOR">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>3D7CF9F2-D9BD-D465-77B8-88D8548D5132</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SERVICIO_COMEDOR" id="1753E9AA-C5ED-0388-8BF5-DB0851653D63">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>EBCC9F0A-9826-FC4E-97AE-6BAA55CBB065</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_SERVICIO_COMEDOR" id="15D67EE7-1113-22AB-0FD7-C3B7FB35C119">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>A4644E7E-501E-8F23-2153-2D27651C8409</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>37C97FFE-33B2-CF8B-C2A8-DFBF3C26EF48</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_SERVICIO_COMEDOR" id="1B076968-F18B-155F-FCCB-DF87F8A06958">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>687C5E86-6C88-D921-9542-6EFB03D0CFAF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>5154C33E-B754-ED3E-2A54-F87DE0B1A782</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0976B36A-1920-A9C6-3DCA-38584ED940EA" name="SERVICIO_COMEDOR_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>77AD8008-6ECA-E0BE-7F6F-C37D85AB034C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1753E9AA-C5ED-0388-8BF5-DB0851653D63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

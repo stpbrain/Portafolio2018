@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94060C42-28DD-1370-6017-A0E04FE21C5A" name="STATUS_HABITACION">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>A4D286F8-FC91-5845-A928-8165D96AB3AF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_STATUS_HABITACION" id="735AAD11-3FCE-E90A-70C8-D025D67AA59B">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>8D329D80-8D88-1AAC-038B-536A0139CD42</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_STATUS_HABITACION" id="F882B51E-503F-8E3C-D071-44460358029C">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>95A3517B-9648-9B0E-BCB6-5D7F32F677CC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>8221A622-BC41-2204-2358-C7EB03E4F1DC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_STATUS_HABITACION" id="700BDF40-0CF7-EB69-9E25-7A8B6B7FF7F0">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>E58BEAE3-86FE-7273-A09B-EF17211CE494</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C1DD3AA7-86E5-CC9B-00CC-5ED8BCBBA83C</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C739DCBE-6BA6-DA6F-B7AD-43ECB72AD52C" name="STATUS_HABITACION_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>0851D272-9BDC-EF02-E030-C8182F7996DE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="735AAD11-3FCE-E90A-70C8-D025D67AA59B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

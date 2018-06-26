@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19326492-FF96-9773-9A9C-645E553E861E" name="Habitacion">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>93777EC2-0EBC-C09C-93C7-84FD751E816C</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NumeroHabitacion" id="49AD82C4-8F2A-79A9-A117-35BEBB7578FA">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>9B831D93-5B86-C23E-1C5F-A3738F3DC395</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Precio" id="57115488-C1AA-718A-BD5C-B3E5C5251345">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>CA21CBE3-8792-86CB-D17B-C43BA2133740</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Disponible" id="47A19125-895F-F551-A055-CBB93841D515">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>259A44E0-2E8E-6DBA-71CC-33993FF6979A</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Reserva_Nro_reserva" id="50BAC061-5399-BBFA-90E6-37D5A876107D">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>F7D9469D-EEC6-41EF-0EE4-DDB027706D4A</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A36EB52-526A-B8CE-FEBB-088828AADA68" referredColumn="B683DD91-7003-3EC9-82E0-10FA518A52AB"/>
+</associations>
+</Column>
+<Column name="Reserva_ReservaId" id="5F2CBAD0-4C37-CA0A-D846-A769E2A232BB">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:39:45 UTC</createdTime>
+<generatorID>212FF9A8-7888-4E46-5C40-EFA91AA08B35</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E77EA25-B97E-53D9-182F-100A25859EA4" name="Habitacion_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>D830AD0D-04E7-1CD1-21B2-5886C12DB3AC</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49AD82C4-8F2A-79A9-A117-35BEBB7578FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD315077-0A01-111D-3517-AAE6C4584026" name="Habitacion__IDX">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CF0B7479-4E36-F0DB-C4A2-9303E3A4A5E3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="50BAC061-5399-BBFA-90E6-37D5A876107D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="770C6B75-7998-F594-6F9B-50C14EDB7C66" name="Habitacion_Reserva_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>CF0B7479-4E36-F0DB-C4A2-9303E3A4A5E3</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50BAC061-5399-BBFA-90E6-37D5A876107D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE9395BF-3EE0-3E31-A81D-89D5B6BE3ECF" name="MONEDA">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>E050025B-256A-0971-400A-1EC73A4CBCE1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MONEDA" id="97B9F3EC-438B-3BF5-8AE0-EBACF1915A70">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>82F3C84D-DB00-5B01-CA0F-704B790D1CD4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_MONEDA" id="CCD0DDD3-B73E-2CE7-9EF8-AFE375F57872">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>B6FB7B4C-D259-C2F5-6E83-4ED3F4BF31A1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F84AA5C4-F297-CBEC-251B-352051709181</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MONEDA" id="04606D86-5BEE-39E9-5D53-4838646EAC0F">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>E7B73B63-78B7-08C7-AF5C-60957C894642</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>5154C33E-B754-ED3E-2A54-F87DE0B1A782</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D29FD995-3297-E837-532D-5404B20A6B7C" name="MONEDA_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>2E27B8A7-0B37-7D70-A50E-B4BB8B506666</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97B9F3EC-438B-3BF5-8AE0-EBACF1915A70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

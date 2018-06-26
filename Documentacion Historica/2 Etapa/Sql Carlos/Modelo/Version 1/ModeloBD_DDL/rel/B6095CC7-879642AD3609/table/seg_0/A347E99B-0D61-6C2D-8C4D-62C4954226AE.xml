@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A347E99B-0D61-6C2D-8C4D-62C4954226AE" name="USUARIO">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>3244C6DF-9BC7-A8CE-A4D6-867CA39E4406</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="23E83EE2-31E3-4383-848D-D94F97DCDE75">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>E3039A8A-5C19-FF4F-EA8D-9A6A42234D7E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEC_USUARIO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_USUARIOID</autoIncrementTriggerName>
+</Column>
+<Column name="ID_PERSONA" id="8B311C4D-EB9C-7415-A945-9851FE715C33">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>7071B009-7350-1FDB-B35C-F6A78FE1DB68</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="055B6383-E4FB-F7A5-5FF0-71909938733B" referredColumn="8632E72F-39F8-DA43-2147-A1F1038B16EF"/>
+</associations>
+</Column>
+<Column name="USER_NAME" id="6E0DFDAB-3901-692D-B2AC-261F928CBFE6">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>C3FC7EE3-255E-308B-856A-D9F87B520842</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9942B83E-1FE3-0A60-8C70-CF28BF0F3C85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_PASS" id="A742A7E7-4E6C-63C1-49CA-6205880D22E1">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>2F9A610D-EE59-62DD-B155-268B1AF12CC9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A6394F1F-A75B-EA6B-DAB3-A14D80D32469</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ROL_USUARIO" id="D8A1127E-F909-4C59-B925-9C02B30D86B4">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>6E028DFE-D6DB-1579-DF9D-7C4DEAEA2C8D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99B960D8-B238-8ED9-E282-006F9D308DD4" referredColumn="E9C1610C-EAEF-963A-4991-8EBFADB54E90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24B9E52A-E126-5A28-11DD-AEC1F2EDE213" name="USUARIO_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>340182AA-B8D9-3CAD-13A3-644FD0D64E8C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23E83EE2-31E3-4383-848D-D94F97DCDE75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="432C94B9-AEAA-79BD-55EE-916748A22FAE" name="USUARIO_PERSONA_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B311C4D-EB9C-7415-A945-9851FE715C33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4857A32-DC13-EA5D-3D8B-AD4DB05CB299" name="USUARIO_ROLUSUARIO_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8A1127E-F909-4C59-B925-9C02B30D86B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

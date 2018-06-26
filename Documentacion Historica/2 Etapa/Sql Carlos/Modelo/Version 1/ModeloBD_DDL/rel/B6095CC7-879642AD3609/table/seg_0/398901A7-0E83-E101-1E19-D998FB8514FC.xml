@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="398901A7-0E83-E101-1E19-D998FB8514FC" name="ORDEN_PEDIDO_DET">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>8A4A62DB-510A-51C6-1954-7E4656B05E25</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ORDEN_PEDIDO_DET" id="F01B0087-4E4E-0570-69C8-6689DAA1C543">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>FE316A08-D2E4-D363-5106-9545625B0274</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEC_ORDEN_PEDIDO_DET</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_ORDEN_PEDIDO_DETID</autoIncrementTriggerName>
+</Column>
+<Column name="ID_ORDEN_PEDIDO" id="5288909E-02A0-9F77-DF2C-33FBB0672CEC">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>A4C1D97B-AF8A-BB25-AB26-803FE73E185E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9EBA1F2-8A61-FEB1-6BCC-5B62A6E08DAB" referredColumn="095DF794-33AF-CC14-9732-02120E3E2FE7"/>
+</associations>
+</Column>
+<Column name="SEC_ORDEN_PEDIDO_DET" id="159F4B40-593C-AC62-2DBE-980718A2FADA">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>11407014-0F83-24CE-0C86-B4353B6E2F18</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F7E0715F-8D08-0782-4C0A-A101A73E34F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRODUCTO" id="2E6F5800-0B44-CF70-1FA6-D676A4F415B8">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>6F3F8AC3-F172-C2B9-4042-3FE0A487F42A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD302BD8-E5E4-F310-9DE8-C43E78F3874C" referredColumn="656450A5-BC6B-C10E-462D-D5883E2F73A5"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="A045A870-938D-2EBD-A051-44C0535F49B6">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>CAA9AE80-39D7-17B3-1988-ADC15AC399D7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO_UNITARIO" id="4BFFD369-9CA2-EE94-58A0-60086BFE2774">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>7E708D26-B214-B067-A07D-6DB51DA07FD8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C0996BF9-3441-4123-D3CF-7D7C31D1679B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTO_TOTAL_OP" id="9AC255FC-5269-0F1C-E589-3C22C788B270">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>7196CB8A-2247-2881-E08C-66B09E3D5ECF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C0996BF9-3441-4123-D3CF-7D7C31D1679B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FFCD3C7-AA0A-AF25-560E-D68110419B67" name="ORDEN_PEDIDO_DET_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>279C5E35-A4E7-6FFC-F855-CBFAAFBEEA3E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F01B0087-4E4E-0570-69C8-6689DAA1C543"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9B427EF-998E-690F-4E2E-F1717A14ECBD" name="ORDENPEDIDODET_ORDENPEDIDO_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5288909E-02A0-9F77-DF2C-33FBB0672CEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7CB259A-315E-3224-4C8A-1AEEEF6AFADA" name="ORDENPEDIDODET_PRODUCTO_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E6F5800-0B44-CF70-1FA6-D676A4F415B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

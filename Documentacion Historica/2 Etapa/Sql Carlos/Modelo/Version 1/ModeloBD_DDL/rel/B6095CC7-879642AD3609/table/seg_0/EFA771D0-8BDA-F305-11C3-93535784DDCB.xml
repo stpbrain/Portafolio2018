@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFA771D0-8BDA-F305-11C3-93535784DDCB" name="RUBRO">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>82AE1701-E7A1-E831-B413-38FDD01D2D77</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RUBRO" id="8F55A9F5-DC89-21D0-2F2F-195E7F270789">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>C0D393C2-09F2-60A7-ED45-547A19D72AAE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEC_RUBRO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_RUBROID</autoIncrementTriggerName>
+</Column>
+<Column name="DSC_RUBRO" id="884C9B88-8CA6-3182-F123-76476219AD0A">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>288DDD78-4B8A-FBE7-E4D0-EAA1A071FB17</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>204C0EC5-9776-3C7A-29EC-4D6DD17D8F65</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="608A7144-515D-BE2C-51C4-BB37BE253502" name="RUBRO_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>E5C9B72A-8243-BC77-4C4B-50B7A21278FA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F55A9F5-DC89-21D0-2F2F-195E7F270789"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

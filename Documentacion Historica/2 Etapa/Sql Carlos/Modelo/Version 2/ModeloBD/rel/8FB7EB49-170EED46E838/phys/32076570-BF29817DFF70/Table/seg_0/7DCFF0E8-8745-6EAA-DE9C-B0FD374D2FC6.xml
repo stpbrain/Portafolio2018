@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMPRESA" directorySegmentName="seg_0" id="7DCFF0E8-8745-6EAA-DE9C-B0FD374D2FC6">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_EMPRESA" id="1424EACA-8251-8B22-08EF-79606F0F36AD">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTRASEÃ‘A" id="1A369AC9-1CFD-4B5E-A345-F34C9CDB13E3">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONO" id="244D4CB4-9B5F-A032-3A86-1BB0F958DE17">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRECCION" id="34F7FAEA-F48A-5887-F07A-00D08C2534F1">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="886D30A6-100A-893C-51B2-41BC9D3DEBAA">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RUT" id="95D8CF12-5A9F-9854-6DDB-B8520ACFCEF0">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="B6F5D551-22F1-A793-24DE-05FA57570122">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMPRESA_PK" id="AAF1441F-6964-AA14-E16B-71EFC9F85204">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A01CD59-3A4D-0E1E-ACEC-063B70E57CC5" name="ServicioComedor">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:24:07 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ServicioComedorId" id="F2ED42A8-2271-02C1-011C-102F300A5C1B">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:24:30 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpleadoHosteriaId" id="9434C673-6825-C901-697C-BEC12D4C247D">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:58:13 UTC</createdTime>
+<generatorID>78028DE7-446B-B86C-E981-6FBAE9A8EFC8</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<referedAttribute>F545E5BB-E3A9-A971-BADC-F86EA5BCA35B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="87EE309E-FC90-65E6-4E8F-6873F9C462F5">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:33:46 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C179416-A28E-B598-CBE1-5D72C7B45F7E" name="Servicio_comedor PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:24:51 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F2ED42A8-2271-02C1-011C-102F300A5C1B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84E96B08-FBD4-EC70-BB04-93E14F29678D" name="TIPO_HABITACION">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>A2C4A914-32A5-A4A0-0792-4402824298D9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_HABITACION" id="7E8DC9D7-CAE9-8BC9-5912-28526660887B">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>BCE700F4-2614-A444-2405-44753E222223</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_TIPO_HABITACION" id="4C957E1A-5A23-2325-04D6-C2E3FC7DB85F">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>E53B3CA3-4FA5-8372-27B0-D1C3475966E9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C1DD3AA7-86E5-CC9B-00CC-5ED8BCBBA83C</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TIPO_HABITACION" id="E3DB1862-BCE0-4E18-96D2-8EF540897A8A">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>8DA15CAA-7FFA-1C6F-DC04-D75DC14269E5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5CCBB1D5-05BC-5D89-DBC2-9DABE53A22AA</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="074D321B-2DD4-26ED-AD38-11448BA7D4F8" name="TIPO_HABITACION_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>51EDDA2F-DF1C-FCCF-2462-9A2D6B1DADC2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E8DC9D7-CAE9-8BC9-5912-28526660887B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

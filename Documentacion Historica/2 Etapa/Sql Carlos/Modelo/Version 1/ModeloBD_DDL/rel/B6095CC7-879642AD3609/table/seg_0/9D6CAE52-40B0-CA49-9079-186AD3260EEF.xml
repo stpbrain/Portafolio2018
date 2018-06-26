@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D6CAE52-40B0-CA49-9079-186AD3260EEF" name="TIPO_CAMBIO_VALOR">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>B93E7E4A-EFD6-5D24-1C92-1F7CF5934FAF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_CAMBIO_VALOR" id="EC2AB95F-046B-9F9F-DCA1-760F54ECFE7F">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>CF59A156-4C80-02D3-0188-1D9D08D60A0B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEC_TIPO_CAMBIO_VALOR</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_TIPO_CAMBIO_VALORID</autoIncrementTriggerName>
+</Column>
+<Column name="ID_TIPO_CAMBIO" id="A5607FE3-D2B1-4A73-3D9B-E236277A4EE4">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>794457BD-08C3-9AE0-AA9B-2C92A0BA3DD4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5D0FF99-BF7E-1793-A259-EACC43C42488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F25691B0-FADC-3CC1-83C7-A3890929E72C" referredColumn="EA8E316C-4A2F-B1A3-478B-E9282F7E7562"/>
+</associations>
+</Column>
+<Column name="FECHA" id="A9FA5CA6-94BE-1DCD-0B3F-4FBFBA0BA774">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>2BC18978-2642-C777-B43C-9A695B0AE512</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>92398A9C-3BB3-4CB0-13EF-14F5CD8B79A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR_TIPO_CAMBIO" id="E59383B7-05E5-A64C-CC7D-0572BBB4D8A3">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>D8410CE0-27D2-5B5C-4287-0FBB0431586E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F697924D-B84C-8F97-6738-6AF4E1ACA24D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2245702B-D050-6AD9-1170-71FE14F669D4" name="TIPO_CAMBIO_VALOR_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>29D2314E-80DC-5E64-3A1D-8277C640C5C9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC2AB95F-046B-9F9F-DCA1-760F54ECFE7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="927ED94E-36CE-59A4-254D-33C6654C5C4B" name="TIPOCAMBIOVALOR_TIPOCAMBIO_FK">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5607FE3-D2B1-4A73-3D9B-E236277A4EE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

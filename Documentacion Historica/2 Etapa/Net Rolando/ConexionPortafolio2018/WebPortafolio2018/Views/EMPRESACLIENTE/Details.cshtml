@@ -1,0 +1,67 @@
+﻿@model WebPortafolio2018.Models.EMPRESACLIENTE
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>EMPRESACLIENTE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RUTEMPRESA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RUTEMPRESA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBREEMPRESA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBREEMPRESA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CONTRASEÑA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONTRASEÑA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIRECCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIRECCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TELEFONO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TELEFONO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.EMPRESACLIENTEID }) |*@
+    @Html.ActionLink("Volver", "Index")
+</p>

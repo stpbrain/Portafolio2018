@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51C1B4D4-DE07-64BA-0875-5303E598244E" name="RESERVA_DETALLE">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>5B18B2DD-7BFF-DBE8-DCB7-C48FCF36F851</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RESERVA_DETALLE" id="62905B57-3340-DC8C-82CF-F25EC1205B25">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>98CAAD97-4DB1-5F21-C342-214F5B92950B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_RESERVA" id="6A0534C9-C863-ACCF-2D5E-EE2BC441B9AD">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>6BC9A9F8-7321-1795-DF84-C196388FD544</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>3DBFF631-F84E-2478-930A-0A318B41E880</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27068D0A-CD5A-02B3-0764-9EE58C90761E" referredColumn="3DBFF631-F84E-2478-930A-0A318B41E880"/>
+</associations>
+</Column>
+<Column name="ID_HABITACION" id="A1C18628-26D1-95D9-04A2-3566C1825347">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>51875697-A34A-6C91-0D88-3075EFCCB53F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>63A6194C-9618-B6E1-5F67-57A672C9784F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CC48BCE-F828-AD97-AEEC-8E888D55EB70" referredColumn="63A6194C-9618-B6E1-5F67-57A672C9784F"/>
+</associations>
+</Column>
+<Column name="ID_HUESPED" id="C4CEFB7B-0E17-B27F-90A3-E24528331515">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>80B28CAA-BE65-208D-FB63-96E4E81F5054</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>FD9633AD-C4CE-FCB6-4573-59C9FF758015</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D75B5152-A42C-A4BE-1506-D2BDF4CB10B5" referredColumn="FD9633AD-C4CE-FCB6-4573-59C9FF758015"/>
+</associations>
+</Column>
+<Column name="CONFIRMA_RESERVA" id="07BEA0F3-7E82-CA84-D048-D45A31BB39F1">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>CA30B190-3603-638B-DFEB-C86BF73551A2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>BB3559FA-DA1D-96A7-70A9-C3725842E5D9</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA107BD0-F4C4-2837-6AFE-7BF2C554D855" name="RESERVA_DETALLE_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>9D6D32F3-41ED-B1BF-9E4F-D6B25DB2590A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62905B57-3340-DC8C-82CF-F25EC1205B25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2E9818D-97C4-5706-A613-C5E5C3680B94" name="RESERVADET_HABITACION_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1C18628-26D1-95D9-04A2-3566C1825347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B442E3AA-001F-BEAE-4401-47A3B8C048D7" name="RESERVADET_HUESPED_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4CEFB7B-0E17-B27F-90A3-E24528331515"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F01DBB55-E064-A4C3-D35A-B9D8AC66A9BD" name="RESERVADET_RESERVA_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A0534C9-C863-ACCF-2D5E-EE2BC441B9AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E25E0686-8607-3B79-8B7C-B1E076462C34" containerWithKeyObject="A491A6B0-0488-FB34-C62E-139D85860F9D" localFKIndex="0D4FC38E-FC0D-4A19-233B-951355F022D4" name="RESERVADET_HABITACION_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>F6D3417D-C783-8159-F916-55350E187906</importedID>
+<referredTableLongName>HABITACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F385E335-37AC-7B56-70EC-9A5952AB2DC2</referredTableID>
+<keyObject>F50A37BF-E641-7969-B36C-992863AC59FD</keyObject>
+<referredKeyID>F50A37BF-E641-7969-B36C-992863AC59FD</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_HABITACION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

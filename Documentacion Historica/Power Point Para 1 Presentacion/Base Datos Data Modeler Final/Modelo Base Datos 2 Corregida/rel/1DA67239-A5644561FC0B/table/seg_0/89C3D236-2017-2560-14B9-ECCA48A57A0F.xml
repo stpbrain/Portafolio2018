@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89C3D236-2017-2560-14B9-ECCA48A57A0F" name="EmpresaCliente">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>05E5B936-7FA7-7B39-4242-9EBB84438878</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EmpresaClienteId" id="DDE370AF-38A5-8BC3-5E24-21E18B5C852B">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>B2E350CE-EF91-FA6B-54B5-40A86B97B761</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RutEmpresa" id="BCA1540F-29BF-C22F-B617-00232707F459">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>F7A1C221-F6C4-43D0-D3FB-F8B3C58CC959</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NombreEmpresa" id="98FB059C-3614-30B8-2FC2-9B41236169DD">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>EEE40418-CCDE-4E30-98DA-A785D81EA806</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contraseña" id="A14B3573-8A8A-A726-5D58-66EB11E20CF6">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>13B1EA4B-E535-3635-7F3C-7C3F7F374F60</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumeroHuespedes" id="29881794-388B-C09D-257C-2A0C164140CD">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:12:27 UTC</createdTime>
+<generatorID>03BEFB83-91AB-59BC-076B-7B616C30B3B3</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="82ACDA53-E188-9B4E-733D-2F669556D677">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>E75AE870-392A-4AAE-69E6-5623858AFE36</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="2C7A4E45-5432-EDF6-5955-BF6F3CEF8EC0">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>EBAB26A1-0AE9-F50A-03E8-25ED7F1601AE</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="6791E486-FE03-04D8-804E-442A24408652">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>1154627C-DE18-4787-D82B-9C0AC06C0531</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hostal_HostalId" id="0E8B97D5-12B6-ABD4-E542-F8C3E2F76ED2">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>80CD02FD-0250-9C5E-0709-5A4F7BF59530</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9AE29F6-F0CE-D420-C3AE-7CA0B6EF3ABA" referredColumn="02C9BCAC-750C-3838-E0ED-AB0EC478DCA5"/>
+</associations>
+</Column>
+<Column name="ServicioComedor_ServicioComedorId" id="D20A56BD-BA23-DF8C-B97A-33BA581F05BA">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:38:50 UTC</createdTime>
+<generatorID>AE90359F-6E89-9667-B32D-817F575478B1</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E13F496F-4BDE-1B75-041B-4D63993665DE" referredColumn="B47540A5-1953-C3F7-BEDF-38A49FB2712C"/>
+</associations>
+</Column>
+<Column name="HuespedId" id="0322E2F0-301D-FAE6-E1B5-654692BFE1E4">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:47:59 UTC</createdTime>
+<generatorID>D8FAB31B-7F1C-E6A2-DCEA-ADDEC5AEC1A9</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D9029F3D-4B74-351F-3EEA-F594C83BEFE9" name="EmpresaCliente_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>6B16EAD6-F7B7-D5A1-CB45-92589F92A566</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDE370AF-38A5-8BC3-5E24-21E18B5C852B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DAAA26C-EE37-80CE-6A01-4FB3EC45C5AF" name="EmpresaCliente_Hostal_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>B61DE241-EDF6-2E2A-0CD6-0A6131C838A0</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8B97D5-12B6-ABD4-E542-F8C3E2F76ED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE524CB7-7B69-5FF6-2F56-D70163605BAB" name="EmpresaCliente_ServicioComedor_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:38:50 UTC</createdTime>
+<generatorID>E370DE88-4F14-673D-4A1E-E7219A0F2DF5</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D20A56BD-BA23-DF8C-B97A-33BA581F05BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

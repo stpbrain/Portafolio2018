@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07B2C365-589C-39C2-DB19-97FD856491BA" name="FacturacionEmpresa">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>85505B7F-D72F-5E26-DE7D-FB50618F5CE5</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nro_orden_compra" id="808DE6E3-A9D4-087D-3432-8154DC64DAAF">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>EEE29D43-7414-1486-5CFA-96BF78CBAA47</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaCreacion" id="BE485260-FDFD-D6EF-8D5C-977BFDEFE469">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>3B3F5CF0-0A83-3C37-3EAA-2FF0ED068D25</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaRecepcion" id="40D76AE4-B329-2ED0-56E2-4DF06D4A6855">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>E59B17E4-8CDC-95CF-6D74-611B4CF92E3D</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OrdenCompraNumero_1" id="ACB2B2AA-86EF-8D8D-743B-BCE2E1AE6AA2">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>79840166-5730-6564-5696-BA19D7A574C4</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaPago" id="AD720B9D-1905-9BC0-AB6C-6D47685B1693">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>3895A67C-8E76-3ECC-D583-4DB4504B9EC9</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FacturacionEmpresaId" id="9BA18073-6D06-A4FC-BDFF-77E8F1D0D1C1">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:39:45 UTC</createdTime>
+<generatorID>54E353CC-5DDC-FD39-4654-DF7FFB9C73D2</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OrdenCompraNumero" id="027B5357-0B2D-396C-7CDC-8C7B8F6CB5CF">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:39:45 UTC</createdTime>
+<generatorID>AA9316C9-DF6C-B322-DD4C-0C2CC6EE8468</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProductoId" id="46FA3B13-C042-B9F8-B1A4-036ECC3072A8">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:19:06 UTC</createdTime>
+<generatorID>EDC4758E-AFD3-1D59-386F-5BC4F1A16719</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hostal_HostalId" id="A1D9101F-AB63-7233-2917-FDABE59EC196">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:38:50 UTC</createdTime>
+<generatorID>AF96F7A7-FD57-5256-4AFB-F2E89C20CDAA</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16493E73-16FC-EAFF-6193-886D25A2AA0A" referredColumn="02C9BCAC-750C-3838-E0ED-AB0EC478DCA5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="890B45E5-C780-9A9D-2665-8CD2604CBB8C" name="FacturacionEmpresa_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>9077D7B2-0AD1-CF8C-09D1-B88CECB2DF24</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BA18073-6D06-A4FC-BDFF-77E8F1D0D1C1"/>
+<colUsage columnID="A1D9101F-AB63-7233-2917-FDABE59EC196"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE936EAF-7639-0B08-EFA5-5947210E0E1D" name="FacturacionEmpresa_Hostal_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:38:50 UTC</createdTime>
+<generatorID>00041A23-0E94-A42B-1D6F-F0A3949BDCA2</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1D9101F-AB63-7233-2917-FDABE59EC196"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

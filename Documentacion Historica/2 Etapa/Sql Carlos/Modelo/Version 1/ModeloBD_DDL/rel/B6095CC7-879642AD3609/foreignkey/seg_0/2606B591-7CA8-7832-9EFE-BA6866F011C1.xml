@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2606B591-7CA8-7832-9EFE-BA6866F011C1" containerWithKeyObject="BFA9B0F2-2D9C-1DDD-31E5-A6E07A8E837B" localFKIndex="043A8871-95F6-932F-DE83-E55F045D5EB6" name="PROVEEDOR_RUBRO_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:26:26 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<importedID>963ADC6B-759F-F0DA-D955-980E4824586C</importedID>
+<referredTableLongName>RUBRO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EFA771D0-8BDA-F305-11C3-93535784DDCB</referredTableID>
+<keyObject>608A7144-515D-BE2C-51C4-BB37BE253502</keyObject>
+<referredKeyID>608A7144-515D-BE2C-51C4-BB37BE253502</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_RUBRO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

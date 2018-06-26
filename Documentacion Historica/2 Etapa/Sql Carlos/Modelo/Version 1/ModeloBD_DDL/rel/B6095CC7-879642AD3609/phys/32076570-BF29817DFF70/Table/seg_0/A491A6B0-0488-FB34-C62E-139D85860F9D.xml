@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RESERVA_DETALLE" directorySegmentName="seg_0" id="A491A6B0-0488-FB34-C62E-139D85860F9D">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_HABITACION" id="0FC7FC6A-30C2-7E41-6D63-D7F63E062A2D">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONFIRMA_RESERVA" id="3D9BBC31-2421-D269-FE1F-D2FC9DAB2149">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RESERVA" id="B27EDE5B-F77A-431D-0A03-DB243E3FFDCB">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PERSONA" id="C46BAED4-7547-D344-712B-21138F0377C8">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_RESERVA_DETALLE" id="D78DE59A-7E06-D716-75A2-F4408AD8290A">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RESERVADET_HABITACION_FK" id="0D4FC38E-FC0D-4A19-233B-951355F022D4">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RESERVADET_PERSONA_FK" id="78FA58F3-F173-24CA-75B6-0579CAEAB753">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RESERVADET_RESERVA_FK" id="AF6F98A4-C108-E8FB-8D0F-9A4467055877">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RESERVA_DETALLE_PK" id="2C6220A9-7295-A2FA-280A-82771B7356F6">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 20:23:14 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

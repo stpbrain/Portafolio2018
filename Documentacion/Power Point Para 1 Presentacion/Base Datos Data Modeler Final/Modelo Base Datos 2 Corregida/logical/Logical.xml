@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="EDEB9A60-3F89-F178-9245-9A48B569EDCA" mainViewID="F2A2B6E1-3161-11A9-56A8-2BF30EAD4646">
-<createdBy>Roly</createdBy>
-<createdTime>2018-04-01 20:48:10 UTC</createdTime>
-<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>

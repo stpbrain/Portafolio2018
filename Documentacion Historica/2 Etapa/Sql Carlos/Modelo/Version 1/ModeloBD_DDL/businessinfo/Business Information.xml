@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="2E6E5470-6883-822C-90E9-8E32655873AD">
+<createdBy>capoblete</createdBy>
+<createdTime>2018-05-17 15:30:11 UTC</createdTime>
+<ownerDesignName>ModeloBD_DDL</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

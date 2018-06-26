@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo Base Datos 2 Corregida" id="02B579E9-67BC-AA3F-7059-41A209DB5EFF" version="3.5">
-<createdBy>Roly</createdBy>
-<createdTime>2018-04-01 20:48:10 UTC</createdTime>
-<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>02B579E9-67BC-AA3F-7059-41A209DB5EFF</designId>
-</OSDM_Design>

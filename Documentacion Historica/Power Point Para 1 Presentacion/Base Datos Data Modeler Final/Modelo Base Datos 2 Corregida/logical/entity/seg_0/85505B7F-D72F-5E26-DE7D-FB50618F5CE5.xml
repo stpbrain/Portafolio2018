@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85505B7F-D72F-5E26-DE7D-FB50618F5CE5" name="FacturacionEmpresa">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:17:11 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="FacturacionEmpresaId" id="54E353CC-5DDC-FD39-4654-DF7FFB9C73D2">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:28:07 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ProductoId" id="EDC4758E-AFD3-1D59-386F-5BC4F1A16719">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:17:46 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OrdenCompraNumero" id="AA9316C9-DF6C-B322-DD4C-0C2CC6EE8468">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 01:26:51 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaCreacion" id="3B3F5CF0-0A83-3C37-3EAA-2FF0ED068D25">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:18:15 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaRecepcion" id="E59B17E4-8CDC-95CF-6D74-611B4CF92E3D">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:18:37 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OrdenCompraNumero_1" id="79840166-5730-6564-5696-BA19D7A574C4">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:18:57 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaPago" id="3895A67C-8E76-3ECC-D583-4DB4504B9EC9">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:19:11 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HostalId" id="AF96F7A7-FD57-5256-4AFB-F2E89C20CDAA">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:38:02 UTC</createdTime>
+<generatorID>00041A23-0E94-A42B-1D6F-F0A3949BDCA2</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="true"/>
+</engineerTo>
+<referedAttribute>9EC7D0FD-6F17-FD6E-8E54-E7FA65236C34</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9077D7B2-0AD1-CF8C-09D1-B88CECB2DF24" name="Facturacion_empresa PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 21:18:12 UTC</createdTime>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1DA67239-47F8-4867-0826-A5644561FC0B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54E353CC-5DDC-FD39-4654-DF7FFB9C73D2</attributeRef>
+<attributeRef>AF96F7A7-FD57-5256-4AFB-F2E89C20CDAA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

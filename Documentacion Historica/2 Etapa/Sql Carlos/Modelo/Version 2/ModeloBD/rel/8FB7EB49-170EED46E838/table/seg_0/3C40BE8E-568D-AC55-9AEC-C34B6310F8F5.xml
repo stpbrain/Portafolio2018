@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C40BE8E-568D-AC55-9AEC-C34B6310F8F5" name="PRODUCTO">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>58A2BB5C-B7AD-A8D6-32E7-A55CB28EC2E1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PRODUCTO" id="24A0D563-B803-48E7-2BC8-7FBBE873850D">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>F47F84F8-CFF4-0323-2333-47F7D91926B6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_PRODUCTO" id="7138EC2D-AE30-2FE2-2D17-99D78B80DE7E">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>E97687D0-8DBF-4399-3837-AD907E2D2016</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1C72CE64-2F40-5A69-F89C-8A570A1AED82</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_PRODUCTO" id="0EDD8DDA-77F3-4E47-7A92-442C5EB9FABB">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>6ECE3C39-D1B2-4E5F-B6DA-C2458B04505A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>337218B5-C026-E9AD-8301-9C99D35272F0</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0450B28-14C0-7793-5E66-3BED5CCA2424" referredColumn="337218B5-C026-E9AD-8301-9C99D35272F0"/>
+</associations>
+</Column>
+<Column name="ID_PROVEEDOR" id="F2CCA517-A9D5-BD95-8BDC-08001A42FD99">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>1BA6C8F6-4A31-1217-9A76-2F78E5172304</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0412279E-7D64-4113-2E60-D4502A98B10A</domain>
+<delegate>4484C526-8F7F-B279-3075-9735109A8DE8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18EBC5B4-F664-EF03-08A0-C1F7BADB8E57" referredColumn="4484C526-8F7F-B279-3075-9735109A8DE8"/>
+</associations>
+</Column>
+<Column name="FECHA_VENCIMIENTO" id="4934F659-02BA-D7E7-46A2-C946674DCA73">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>4EA9DDBB-EADA-0866-A222-3E52C633D33B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8A7CDBF9-D4EF-5E52-74C4-8CDEE48D25E5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73C83BDB-6033-CF67-BDFB-60BA62AD981A" name="PRODUCTO_PK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>B13B5017-F767-8FA5-864D-904A92501391</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24A0D563-B803-48E7-2BC8-7FBBE873850D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71046E85-77A8-4B7E-1767-26FA5F49F9D5" name="PRODUCTO_PROVEEDOR_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2CCA517-A9D5-BD95-8BDC-08001A42FD99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84400F9B-AA57-9C1C-A793-C5B9B111A38E" name="PRODUCTO_TIPOPRODUCTO_FK">
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EDD8DDA-77F3-4E47-7A92-442C5EB9FABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

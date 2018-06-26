@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A350D30B-7F1E-B4F3-2485-5D6D5ECE774E" name="Funcionario">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>D5723DD6-0DE2-E45B-8C88-FEC264B3143D</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FuncionarioId" id="ED244D72-ED94-BC49-C931-83AEFA75704B">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>C36630B0-85C9-BA30-A760-49921ADAF9EB</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contraseña" id="77C1C2B5-58B5-EAE5-A9E3-921F4FE6B5E5">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>D5C4816F-4A24-0C72-5181-CC65879C09A1</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_nivel" id="6A0FD921-5881-452D-4009-7B09C7FC88D9">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:06:39 UTC</createdTime>
+<generatorID>9352B0BF-0CE4-EDBB-0A69-4C367C9FDA8D</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hostal_HostalId" id="6B4BC80F-6996-3072-DD0B-BFC7D8FA62FE">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>36C52836-1540-25CA-14CE-3306687CC74F</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A65EC33-CC52-FBA0-CD42-CC52D25E402A" referredColumn="02C9BCAC-750C-3838-E0ED-AB0EC478DCA5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1BF2789-9FB5-92EB-BF8A-ACFFF8B72099" name="Funcionario_PK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-01 22:01:28 UTC</createdTime>
+<generatorID>A47CBBC1-B9E3-1897-9085-4F4AD0FCC43C</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED244D72-ED94-BC49-C931-83AEFA75704B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37DFBAD6-9AB2-C448-7622-F0F6D51E63FE" name="Funcionario_Hostal_FK">
+<createdBy>Roly</createdBy>
+<createdTime>2018-04-12 02:14:49 UTC</createdTime>
+<generatorID>DA0ED9A4-4F65-40CD-EAC6-868BCF023A00</generatorID>
+<ownerDesignName>Modelo Base Datos 2 Corregida</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B4BC80F-6996-3072-DD0B-BFC7D8FA62FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

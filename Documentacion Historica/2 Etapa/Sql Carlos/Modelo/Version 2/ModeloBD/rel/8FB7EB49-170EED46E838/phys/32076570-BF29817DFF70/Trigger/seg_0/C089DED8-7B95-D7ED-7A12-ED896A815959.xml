@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_TIPO_PRODUCTOID" directorySegmentName="seg_0" id="C089DED8-7B95-D7ED-7A12-ED896A815959">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:42 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN&lt;br&gt;    :new.ID_TIPO_PRODUCTO := SEC_TIPO_PRODUCTO.nextval;&lt;br&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<condition>new.ID_TIPO_PRODUCTO IS NULL</condition>
+<table>91F60E58-2F08-6411-4EA0-76645AB54287</table>
+</TriggerOraclev10g>

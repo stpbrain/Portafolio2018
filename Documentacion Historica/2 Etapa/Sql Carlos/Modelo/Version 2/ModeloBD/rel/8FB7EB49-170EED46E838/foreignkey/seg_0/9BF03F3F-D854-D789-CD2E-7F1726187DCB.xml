@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9BF03F3F-D854-D789-CD2E-7F1726187DCB" name="MINUTA_PLATO_FK">
+<sourceDDLFile>ModeloBD_DDL.sql</sourceDDLFile>
+<createdBy>Carlos</createdBy>
+<createdTime>2018-05-27 04:47:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<importedID>55465E14-A331-C185-4A2F-2A878420BF7D</importedID>
+<containerWithKeyObject>F6A0ECEE-6DAE-F18A-BF6F-5430D1A2C4F9</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>01CFCCD9-B9C4-3E72-9480-F783B1256138</localFKIndex>
+<keyObject>EDD53E01-B942-21C5-B609-143E2B0C8C83</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
